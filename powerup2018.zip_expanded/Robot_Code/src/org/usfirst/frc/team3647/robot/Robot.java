@@ -228,8 +228,8 @@ public class Robot extends IterativeRobot
 	}
 	public void runWrist(){
 		Wrist.setWristEncoder();
-		Wrist.setWristButtons(joy.dPadUp,joy.dPadSide,joy.dPadDown);
-		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.4);
+		Wrist.setWristButtons(joy.dPadDown,joy.dPadSide,joy.dPadUp);
+		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.6);
 		Wrist.runWrist();
 	}
 
