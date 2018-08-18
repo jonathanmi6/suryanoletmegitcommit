@@ -650,7 +650,7 @@ public class Elevator
 						aimedElevatorState = -1;
 					}
 				}
-				
+				else
 				{
 					if(!manualOverride)
 					{

@@ -150,11 +150,11 @@ public class Wrist {
 		{
 			if(wristEncoderValue < Constants.idle)
 			{
-				moveWrist(0.3);
+				moveWrist(-0.2);
 			}
 			else
 			{
-				moveWrist(-0.2);
+				stopWrist();
 			}
 		}
 	}
@@ -384,7 +384,7 @@ public class Wrist {
 						}
 						else if(wristEncoderValue<Constants.aim)
 						{
-							wristState = 1;
+							moveWrist(0.3);
 							aimedWristState = 2;
 						}
 					}
@@ -394,17 +394,14 @@ public class Wrist {
 						{
 							maintainIdlePosition();
 							wristState = 3;
-							aimedWristState = 3;
 						} 
 						else if(wristEncoderValue>Constants.idle)
 						{
-							wristState = 3;
-							aimedWristState = 3;
+							stopWrist();
 						}
 						else if(wristEncoderValue<Constants.idle)
 						{
-							wristState = 2;
-							aimedWristState = 3;
+							moveWrist(0.3);
 						}
 					}
 					else

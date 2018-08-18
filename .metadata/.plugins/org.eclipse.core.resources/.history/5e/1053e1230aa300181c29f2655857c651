@@ -154,7 +154,7 @@ public class Wrist {
 			}
 			else
 			{
-				moveWrist(-0.2);
+				moveWrist(0.2);
 			}
 		}
 	}
@@ -403,8 +403,7 @@ public class Wrist {
 						}
 						else if(wristEncoderValue<Constants.idle)
 						{
-							wristState = 2;
-							aimedWristState = 3;
+							moveWrist(0.3);
 						}
 					}
 					else
