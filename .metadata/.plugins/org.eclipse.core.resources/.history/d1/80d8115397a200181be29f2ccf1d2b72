@@ -127,11 +127,11 @@ public class Wrist {
 		{
 			if(wristEncoderValue > Constants.aim)
 			{
-				moveWrist(0.35);
+				moveWrist(0.2);
 			}
 			else 
 			{
-				stopWrist();
+				moveWrist(-0.2);
 			}
 		}
 	}
@@ -331,56 +331,20 @@ public class Wrist {
 					}
 	
 			case -1://manual
-				if(flat || aim || idle)
+				if(0<overrideValue)
 				{
-					if(flat)
-					{
-						if(reachedFlat())
-						{
-							stopWrist();
-							wristState = 1;
-						} 
-						else
-						{
-							moveWrist(-.2);
-						}
-					}
-					else if(aim)
-					{
-						if(reachedAim())
-						{
-							maintainAimPosition();
-							wristState = 2;
-						} 
-					}
-					else if (idle)
-					{
-						if(reachedIdle())
-						{
-							maintainIdlePosition();
-							wristState = 3;
-						} 
-						else
-						{
-							moveWrist(.2);
-						}
-					}
-					else
-					{
-						wristState = -1;
-						aimedWristState = -1;
-					}
-					
-				}
-				else
-				{
-					if(!manualOverride)
-					{
-						overrideValue = 0;
-					}
 					moveWrist(overrideValue);
+				} 
+				else if (overrideValue<-0) 
+				{
+					moveWrist(overrideValue);
+				} 
+				else 
+				{
+				stopWrist();
 			}
 			break;
+					
 		}
 	}
 		

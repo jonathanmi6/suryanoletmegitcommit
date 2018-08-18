@@ -1388,3 +1388,1746 @@ java.net.UnknownHostException: www.genuitec.com
 
 !ENTRY riolog 1 0 2018-08-17 20:25:57.721
 !MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:13.689
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:29:19.453
+!MESSAGE Running ant file: C:\Users\Jon\Documents\GitHub\suryanoletmegitcommit\powerup2018.zip_expanded\Robot_Code\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:29:19.454
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-08-17 20:29:23.771
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:25.693
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:25.694
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:25.698
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:26.297
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:27.700
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:27.700
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:27.704
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:29.794
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:31.706
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:31.706
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:31.710
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:29:33.570
+!MESSAGE Running ant file: C:\Users\Jon\Documents\GitHub\suryanoletmegitcommit\powerup2018.zip_expanded\Robot_Code\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:29:33.571
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-08-17 20:29:39.936
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:41.714
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:41.714
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:41.719
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:42.530
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:43.721
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:43.721
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:43.725
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:43.976
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:45.727
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:45.727
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:45.735
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:45.755
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:47.736
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:47.737
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:47.742
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:47.751
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:49.744
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:49.744
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:49.749
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:49.772
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:51.751
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:51.751
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:51.762
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:51.776
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:53.763
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:53.763
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:53.767
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:53.778
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:29:55.768
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:29:55.768
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:29:55.772
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:38:02.515
+!MESSAGE Running ant file: C:\Users\Jon\Documents\GitHub\suryanoletmegitcommit\powerup2018.zip_expanded\Robot_Code\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:38:02.515
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-08-17 20:38:06.968
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:07.904
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:07.904
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:07.908
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:09.543
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:09.909
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:09.909
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:09.913
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:09.925
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:11.915
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:11.915
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:11.920
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:11.941
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:13.922
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:13.922
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:13.927
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:13.931
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:15.929
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:15.929
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:15.934
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:15.951
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:17.936
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:17.936
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:17.940
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:17.954
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:19.941
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:19.941
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:19.951
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:19.985
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:21.952
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:21.952
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:21.956
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:21.970
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:23.957
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:23.957
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:23.962
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:23.968
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:25.972
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:25.972
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:25.976
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:25.992
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:27.977
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:27.977
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:27.981
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:27.995
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:29.982
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:29.982
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:29.991
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:30.009
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:31.993
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:31.993
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:32.000
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:32.011
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:34.001
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:34.001
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:34.005
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:34.015
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:36.006
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:36.006
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:36.017
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:36.030
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:38.018
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:38.018
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:38.021
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:38.031
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:40.022
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:40.022
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:40.025
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:40.032
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:42.027
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:42.027
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:42.031
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:42.058
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:44.032
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:44.032
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:44.038
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:44.050
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:46.040
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:46.040
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:46.044
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:46.052
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:48.044
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:48.044
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:48.048
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:48.071
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:50.048
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:50.048
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:50.052
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:50.065
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:52.052
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:52.052
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:52.057
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:52.071
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:54.059
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:54.059
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:54.063
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:54.071
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:56.064
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:56.065
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:56.071
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:56.096
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:58.072
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:38:58.072
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:38:58.079
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:38:58.092
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:00.080
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:00.081
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:00.086
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:00.097
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:02.088
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:02.088
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:02.092
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:02.111
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:04.094
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:04.094
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:04.098
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:04.114
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:06.099
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:06.099
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:06.103
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:06.112
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:08.105
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:08.105
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:08.111
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:08.132
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:10.113
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:10.113
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:10.120
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:10.131
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:12.120
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:12.120
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:12.124
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:12.135
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:14.124
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:14.124
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:14.128
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:14.153
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:16.129
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:16.129
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:16.135
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:16.150
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:18.135
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:18.136
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:18.140
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:18.151
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.141
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.141
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.146
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.158
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.162
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:20.174
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:22.147
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:22.147
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:22.150
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:22.179
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:24.152
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:24.152
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:24.156
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:24.171
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:26.157
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:26.157
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:26.161
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:26.174
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:28.161
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:28.162
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:28.167
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:28.191
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:30.169
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:30.169
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:30.173
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:30.192
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:32.174
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:32.174
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:32.179
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:32.193
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:34.180
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:34.180
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:34.183
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:34.193
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:36.184
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:36.184
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:36.189
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:36.211
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:38.190
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:38.190
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:38.194
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:38.210
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:39:38.852
+!MESSAGE Running ant file: C:\Users\Jon\Documents\GitHub\suryanoletmegitcommit\powerup2018.zip_expanded\Robot_Code\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:39:38.852
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-08-17 20:39:40.195
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:40.196
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:40.202
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:40.215
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:42.203
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:42.203
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:42.212
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:42.260
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:44.214
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:44.214
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:44.219
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:45.817
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:46.220
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:46.220
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:46.224
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:46.285
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:48.226
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:48.226
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:48.232
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:49.343
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:50.233
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:50.233
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:50.237
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:39:50.761
+!MESSAGE Running ant file: C:\Users\Jon\Documents\GitHub\suryanoletmegitcommit\powerup2018.zip_expanded\Robot_Code\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2018-08-17 20:39:50.761
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY riolog 1 0 2018-08-17 20:39:54.829
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:56.238
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:56.238
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:56.241
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:57.394
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:39:58.243
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:39:58.243
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:39:58.247
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:00.900
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:02.247
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:02.247
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:02.251
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:08.335
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:10.253
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:10.254
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:10.257
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:10.271
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:12.258
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:12.258
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:12.262
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:12.272
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:14.263
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:14.263
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:14.267
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:14.288
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:16.267
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:16.267
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:16.274
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:16.290
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:18.276
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:18.276
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:18.280
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:18.299
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:20.281
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:20.281
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:20.285
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:20.301
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:22.285
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:22.285
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:22.289
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:22.310
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:24.290
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:24.290
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:24.294
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:24.310
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:26.295
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:26.295
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:26.300
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:26.318
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:28.301
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:28.301
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:28.305
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:28.329
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:30.307
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:30.307
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:30.311
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:30.337
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:32.312
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:32.313
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:32.319
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:32.332
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:34.320
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:34.320
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:34.324
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:34.337
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:36.326
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:36.326
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:36.330
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:36.357
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:38.330
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:38.330
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:38.333
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:38.355
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:40.335
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:40.335
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:40.340
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:40.353
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:42.340
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:42.340
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:42.344
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:42.357
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:44.346
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:44.346
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:44.351
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:44.372
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:46.352
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:46.352
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:46.358
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:46.370
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:48.359
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:48.359
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:48.363
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:48.373
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.364
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.364
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.379
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.381
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.385
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:50.421
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:52.379
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:52.379
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:52.383
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:52.391
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:54.385
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:54.385
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:54.390
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:54.404
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:56.391
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:56.391
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:56.395
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:56.416
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:58.397
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:40:58.397
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:40:58.401
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:40:58.413
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:00.403
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:00.403
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:00.407
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:00.432
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:02.408
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:02.408
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:02.413
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:02.429
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:04.414
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:04.414
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:04.422
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:04.430
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:06.424
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:06.424
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:06.428
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:18.996
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:20.430
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:20.431
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:20.435
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:20.450
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:22.437
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:22.438
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:22.443
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:22.451
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:24.443
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:24.443
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:24.447
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:24.470
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:26.448
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:26.448
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:26.452
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:26.470
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:28.454
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:28.454
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:28.459
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:28.472
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:30.459
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:30.459
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:30.473
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:30.489
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:32.474
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:32.474
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:32.481
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:32.490
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:34.481
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:34.481
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:34.486
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:34.500
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:36.487
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:36.487
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:36.491
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:36.510
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:38.492
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:38.492
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:38.497
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:38.514
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:40.498
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:40.498
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:40.504
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:40.515
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:42.506
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:42.506
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:42.513
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:42.532
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:44.514
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:41:44.515
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:41:44.518
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:41:59.674
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:00.524
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:00.524
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:00.529
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:00.552
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:02.529
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:02.529
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:02.533
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:02.551
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:04.534
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:04.534
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:04.538
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:27.166
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:28.545
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:28.545
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:28.553
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:28.565
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:30.554
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:30.554
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:30.559
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:30.571
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:32.559
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:32.559
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:32.563
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:32.570
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:34.565
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:34.565
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:34.572
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:34.574
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:34.578
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:36.574
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:36.574
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:36.578
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:46.494
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:46.580
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:46.580
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:46.584
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:46.595
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:48.586
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:48.586
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:48.591
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:48.611
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:50.592
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:50.592
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:50.597
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:50.616
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:52.598
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:52.598
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:52.602
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:52.612
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:54.603
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:54.603
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:54.609
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:54.628
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:56.610
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:56.610
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:56.614
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:56.633
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:58.616
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:42:58.616
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:42:58.620
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:42:58.640
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:00.621
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:00.621
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:00.625
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:00.637
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:02.626
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:02.626
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:02.630
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:02.637
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:04.632
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:04.632
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:04.640
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:04.648
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:06.641
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:06.641
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:06.645
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:06.671
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:08.646
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:08.646
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:08.651
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:08.672
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:10.653
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:10.653
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:10.658
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:10.673
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:12.658
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:12.658
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:12.663
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:12.673
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:14.663
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:14.663
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:14.667
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:14.690
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:16.669
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:16.669
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:16.673
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:16.694
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:18.674
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:18.674
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:18.683
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:18.692
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.683
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.683
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.696
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.699
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.703
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:20.724
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:22.697
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:22.697
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:22.704
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:22.711
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:24.704
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:24.704
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:24.709
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:24.731
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:26.710
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:26.710
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:26.715
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:26.733
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:28.716
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:28.716
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:28.720
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:28.733
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:30.721
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:30.721
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:30.725
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:30.732
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:32.726
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:32.726
+!MESSAGE socket disconnected during read
+
+!ENTRY riolog 1 0 2018-08-17 20:43:32.731
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:32.753
+!MESSAGE Connected to robot at 10.36.47.2
+
+!ENTRY riolog 1 0 2018-08-17 20:43:34.731
+!MESSAGE failed to send keep alive, reconnecting
+
+!ENTRY riolog 1 0 2018-08-17 20:43:34.732
+!MESSAGE socket disconnected during read

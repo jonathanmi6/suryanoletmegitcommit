@@ -127,11 +127,11 @@ public class Wrist {
 		{
 			if(wristEncoderValue > Constants.aim)
 			{
-				moveWrist(0.35);
+				moveWrist(0.2);
 			}
 			else 
 			{
-				stopWrist();
+				moveWrist(-0.2);
 			}
 		}
 	}
@@ -372,15 +372,21 @@ public class Wrist {
 					}
 					
 				}
-				else
+				if(0<overrideValue)
 				{
-					if(!manualOverride)
-					{
-						overrideValue = 0;
-					}
 					moveWrist(overrideValue);
+				} 
+				else if (overrideValue<-0) 
+				{
+					moveWrist(overrideValue);
+				} 
+				else 
+				{
+				stopWrist();
+				
 			}
 			break;
+					
 		}
 	}
 		
