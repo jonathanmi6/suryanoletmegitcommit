@@ -102,18 +102,6 @@ public class ElevatorLevel
 		}
 	}
 	
-	public static boolean reachedClimb()
-	{
-		if(elevatorEncoderValue > Constants.climb - 2200 && elevatorEncoderValue < Constants.climb + 2200)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-	
 	public static void maintainPickUpPosition()
 	{
 		if(reachedPickUp())

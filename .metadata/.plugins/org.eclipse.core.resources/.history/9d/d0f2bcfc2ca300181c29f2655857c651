@@ -36,7 +36,7 @@ public class Elevator
 	public static VictorSPX rightElevatorSPX = new VictorSPX(Constants.rightElevatorSlave);
 	
 	public static DifferentialDrive elevatorDrive = new DifferentialDrive(leftElevator, rightElevator);
-	public static boolean reachedBottom = false;
+	public static boolean reachedBottom;
 	
 	public static void moveEleVader(double speed)
 	{
@@ -669,6 +669,7 @@ public class Elevator
 	}
 	public static void climbPrep(boolean joyButton)
 	{
+		reachedBottom = false;
 		if(joyButton)
 		{
 			//move wrist to idle

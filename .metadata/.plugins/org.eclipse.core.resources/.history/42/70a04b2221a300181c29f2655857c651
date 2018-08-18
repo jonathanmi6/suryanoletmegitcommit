@@ -110,7 +110,7 @@ public class ElevatorLevel
 		}
 		else
 		{
-			return false;
+			return false
 		}
 	}
 	

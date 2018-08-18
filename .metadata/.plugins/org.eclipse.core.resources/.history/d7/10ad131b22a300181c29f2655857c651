@@ -189,4 +189,15 @@ public class ElevatorLevel
 			}
 		}
 	}
+	public static void maintainClimbPosition()
+	{
+		if(reachedClimb())
+		{
+			Elevator.stopEleVader();
+		}
+		else
+		{
+			if(elevatorEncoderValue > Constants.climb)
+		}
+	}
 }

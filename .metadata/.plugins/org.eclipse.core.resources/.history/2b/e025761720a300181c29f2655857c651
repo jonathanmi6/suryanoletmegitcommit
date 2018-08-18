@@ -1,17 +1,12 @@
 package team3647elevator;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
-
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import team3647ConstantsAndFunctions.Constants;
 import team3647ConstantsAndFunctions.Functions;
-import team3647pistons.Lock;
-import team3647elevator.Wrist;
-import team3647pistons.Shifter;
 
 public class Elevator 
 {
@@ -36,7 +31,6 @@ public class Elevator
 	public static VictorSPX rightElevatorSPX = new VictorSPX(Constants.rightElevatorSlave);
 	
 	public static DifferentialDrive elevatorDrive = new DifferentialDrive(leftElevator, rightElevator);
-	public static boolean reachedBottom = false;
 	
 	public static void moveEleVader(double speed)
 	{
@@ -671,42 +665,15 @@ public class Elevator
 	{
 		if(joyButton)
 		{
-			//move wrist to idle
-			if(Wrist.reachedIdle())
+			if(ElevatorLevel.elevatorEncoderValue == 0)
 			{
-				Wrist.maintainIdlePosition();
-			}
-			else if(Wrist.wristEncoderValue < Constants.idle)
-			{
-				Wrist.moveWrist(0.3);
-			}
-			else if(Wrist.wristEncoderValue > Constants.idle)
-			{
-				Wrist.stopWrist();
-			}
-			//move elevator to bottom and lock
-			if(ElevatorLevel.reachedStop() && !reachedBottom)
-			{
-				reachedBottom = true;
-				Lock.lock();
-				Timer.delay(.75);
+				
 			}
 			else
 			{
-				moveEleVader(-.2);
+				moveEleVader(-0.5);
 			}
-			//move elevator to climb and lock
-			if(ElevatorLevel.reachedClimb() && reachedBottom)
-			{
-				Shifter.lowGear();
-			}
-			else if(!ElevatorLevel.reachedClimb())
-			{
-				moveEleVader(1);
-			}
-			joyButton = true;
 		}
-		
 	}
 	
 }

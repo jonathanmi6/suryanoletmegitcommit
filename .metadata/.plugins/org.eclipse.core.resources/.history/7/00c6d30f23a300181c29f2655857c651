@@ -5,7 +5,6 @@ import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import team3647ConstantsAndFunctions.Constants;
 import team3647ConstantsAndFunctions.Functions;
@@ -671,7 +670,8 @@ public class Elevator
 	{
 		if(joyButton)
 		{
-			//move wrist to idle
+			Lock.lock();
+			
 			if(Wrist.reachedIdle())
 			{
 				Wrist.maintainIdlePosition();
@@ -684,18 +684,15 @@ public class Elevator
 			{
 				Wrist.stopWrist();
 			}
-			//move elevator to bottom and lock
+			//elevator move to climb height
 			if(ElevatorLevel.reachedStop() && !reachedBottom)
 			{
 				reachedBottom = true;
-				Lock.lock();
-				Timer.delay(.75);
 			}
 			else
 			{
 				moveEleVader(-.2);
 			}
-			//move elevator to climb and lock
 			if(ElevatorLevel.reachedClimb() && reachedBottom)
 			{
 				Shifter.lowGear();

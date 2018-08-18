@@ -5,7 +5,6 @@ import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.VictorSPX;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import team3647ConstantsAndFunctions.Constants;
 import team3647ConstantsAndFunctions.Functions;
@@ -36,7 +35,7 @@ public class Elevator
 	public static VictorSPX rightElevatorSPX = new VictorSPX(Constants.rightElevatorSlave);
 	
 	public static DifferentialDrive elevatorDrive = new DifferentialDrive(leftElevator, rightElevator);
-	public static boolean reachedBottom = false;
+	public static boolean reachedBottom;
 	
 	public static void moveEleVader(double speed)
 	{
@@ -671,6 +670,7 @@ public class Elevator
 	{
 		if(joyButton)
 		{
+			reachedBottom = false;
 			//move wrist to idle
 			if(Wrist.reachedIdle())
 			{
@@ -689,7 +689,6 @@ public class Elevator
 			{
 				reachedBottom = true;
 				Lock.lock();
-				Timer.delay(.75);
 			}
 			else
 			{
