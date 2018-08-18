@@ -123,7 +123,6 @@ public class Robot extends IterativeRobot
 		Forks.lockTheForks();
 		Shifter.lowGear();
 		Elevator.elevatorState = 0;
-		Wrist.wristState = 0;
 		stopWatch.stop();
 		stopWatch.reset();
 		run = 0;

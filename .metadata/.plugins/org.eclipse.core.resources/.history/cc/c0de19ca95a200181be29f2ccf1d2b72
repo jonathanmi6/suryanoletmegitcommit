@@ -332,11 +332,11 @@ public class Wrist {
 					}
 	
 			case -1://manual
-				if(0<overrideValue)
+				if(0<jValue)
 				{
 					moveWrist(overrideValue);
 				} 
-				else if (overrideValue<-0) 
+				else if (jValue<-0) 
 				{
 					moveWrist(overrideValue);
 				} 

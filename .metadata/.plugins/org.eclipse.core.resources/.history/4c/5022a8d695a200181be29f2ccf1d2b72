@@ -123,7 +123,6 @@ public class Robot extends IterativeRobot
 		Forks.lockTheForks();
 		Shifter.lowGear();
 		Elevator.elevatorState = 0;
-		Wrist.wristState = 0;
 		stopWatch.stop();
 		stopWatch.reset();
 		run = 0;
@@ -230,7 +229,7 @@ public class Robot extends IterativeRobot
 		Wrist.setWristEncoder();
 		Wrist.setWristButtons(joy.dPadUp,joy.dPadSide,joy.dPadDown);
 		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.4);
-		Wrist.runWrist();
+		//Wrist.runWrist(joy.leftJoySticky1 * 0.4);
 	}
 
 	public void runPistonsandForks()
