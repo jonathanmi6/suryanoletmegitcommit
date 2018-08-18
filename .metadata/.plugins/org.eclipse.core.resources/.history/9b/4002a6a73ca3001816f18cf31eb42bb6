@@ -125,7 +125,7 @@ public class Wrist {
 	{
 		if(reachedAim())
 		{
-			moveWrist(.15);
+			stopWrist();
 		}
 		else
 		{
