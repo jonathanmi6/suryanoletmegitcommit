@@ -700,7 +700,7 @@ public class Elevator
 			{
 				Shifter.lowGear();
 			}
-			else if(!ElevatorLevel.reachedClimb() && reachedBottom)
+			else if(!ElevatorLevel.reachedClimb())
 			{
 				moveEleVader(1);
 			}
