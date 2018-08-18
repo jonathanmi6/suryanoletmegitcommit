@@ -324,7 +324,6 @@ public class Wrist {
 							break;
 						case 3:
 							maintainIdlePosition();
-							wristState = 3;
 							break;
 						case -1:
 								wristState = -1;

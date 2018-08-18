@@ -162,15 +162,15 @@ public class Wrist {
 		switch(wristState)
 		{
 			case 0://starting code? big gay
-				if(reachedFlat())
-				{
-					stopWrist();
-					wristState = 1;
-				} 
-				else 
-				{
-					moveWrist(-0.15);
-				}
+//				if(reachedFlat())
+//				{
+//					stopWrist();
+//					wristState = 1;
+//				} 
+//				else 
+//				{
+//					moveWrist(-0.15);
+//				}
 				break;
 			case 1://flat
 				if(manualOverride)
@@ -255,7 +255,6 @@ public class Wrist {
 							if(reachedFlat())
 							{
 								stopWrist();
-								wristState = 1;
 							}
 							else
 							{
@@ -264,7 +263,6 @@ public class Wrist {
 							break;
 						case 2:
 								maintainAimPosition();
-								wristState = 2;
 								break;
 						case 3:
 							if(reachedIdle())
@@ -304,7 +302,6 @@ public class Wrist {
 							if(reachedFlat())
 							{
 								stopWrist();
-								wristState = 1;
 							} 
 							else
 							{
@@ -324,7 +321,6 @@ public class Wrist {
 							break;
 						case 3:
 							maintainIdlePosition();
-							wristState = 3;
 							break;
 						case -1:
 								wristState = -1;
