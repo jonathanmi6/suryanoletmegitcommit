@@ -38,8 +38,8 @@ public class Constants
 
 	//Wrist
 	public final static int flat = 0;
-	public final static int aim = 310;
-	public final static int idle = 690;
+	public final static int aim = 140;
+	public final static int idle = 190;
 	public final static int wristPin = 0;
 	public final static int wristLimitSwitch = 1;
 	

@@ -157,26 +157,26 @@ public class Wrist {
 	
 	public static void runWrist(double jValue)
 	{
-		if(0<jValue){
-			moveWrist(overrideValue);
-		} else if (jValue<-0) {
-			moveWrist(overrideValue);
-		} else {
-			stopWrist();
-		}
+//		if(0<jValue){
+//			moveWrist(overrideValue);
+//		} else if (jValue<-0) {
+//			moveWrist(overrideValue);
+//		} else {
+//			stopWrist();
+//		}
 		
 		
 		switch(wristState)
 		{
 			case 0://starting code? big gay
-				if(reachedFlat())
-				{
-					stopWrist();
-				} 
-				else 
-				{
-					moveWrist(-0.15);
-				}
+//				if(reachedFlat())
+//				{
+//					stopWrist();
+//				} 
+//				else 
+//				{
+//					moveWrist(-0.15);
+//				}
 		wristState = 1;
 			case 1://flat
 				if(manualOverride)

@@ -30,6 +30,7 @@ public class IntakeWheels
 				leftIntakeMotor.set(ControlMode.PercentOutput, -rTrigger*1);
 			}
 		
+			
 		}
 		else
 		{

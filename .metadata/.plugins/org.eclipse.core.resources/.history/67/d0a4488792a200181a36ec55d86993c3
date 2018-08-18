@@ -74,7 +74,7 @@ public class Robot extends IterativeRobot
 		elevatorEncoder = false;
 		bannerSensor = false;
 		currentState = false;
-		wristEncoder = true;
+		wristEncoder = false;
 		wristLimitSwitch = false;
 		wristCurrent = false;
 		intakeBanner = false;
