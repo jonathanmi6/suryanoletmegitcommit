@@ -57,10 +57,14 @@ public class Drivetrain
 		//drive.tankDrive(lYValue, rYValue, false);
 	}
 	
-	public static void meatDrive(double lYValue, double rYValue)
+	public static void meatDrive(double lValue, double rValue)
 	{
-		drive.tankDrive(lYValue, rYValue, false);
+		drive.tankDrive(lValue, rValue);
 		//drive.tankDrive(lYValue, rYValue, false);
+	}
+	public static void curvatureDrive(double throttle, double turn)
+	{
+		drive.curvatureDrive(throttle, turn, true);
 	}
 	
 	public static void runMEATDrivetrain(double yValue, double xValue)
@@ -90,7 +94,7 @@ public class Drivetrain
 		}
 		rSpeed = speed * turnRatioR;
 		lSpeed = speed * turnRatioL;
-		meatDrive(rSpeed, lSpeed);
+		meatDrive(rSpeed * .986, lSpeed);
 	}
 	
 	public static void driveForw(double lValue, double rValue, double speed)
