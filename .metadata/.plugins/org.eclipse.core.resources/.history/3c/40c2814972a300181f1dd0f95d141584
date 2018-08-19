@@ -14,7 +14,7 @@ import team3647ConstantsAndFunctions.Constants;
 
 public class Drivetrain 
 {
-	public static double aimedRatio, currentRatio, sum, speed, turn, turnRatioR, turnRatioL, rSpeed, lSpeed;
+	public static double aimedRatio, currentRatio, sum;
 	public static boolean withinRange;
 	
 	public static double initialCorrection = 0;//-.04//.085
@@ -55,42 +55,6 @@ public class Drivetrain
 	{
 		drive.tankDrive(lYValue * .986, rYValue, false);
 		//drive.tankDrive(lYValue, rYValue, false);
-	}
-	
-	public static void meatDrive(double lYValue, double rYValue)
-	{
-		drive.tankDrive(lYValue, rYValue, false);
-		//drive.tankDrive(lYValue, rYValue, false);
-	}
-	
-	public static void runMEATDrivetrain(double yValue, double xValue)
-	{
-		speed = Math.pow(yValue, 1.96);
-		turn = Math.pow(xValue, 1.96);
-		if(turn == 0)
-		{
-			turnRatioR = 1;
-			turnRatioL = 1;
-		}
-		else if (speed == 0 && turn != 0)
-		{
-			turnRatioR = -1;
-			turnRatioL = 1;
-			speed = turn;
-		}
-		else if(turn>0)
-		{
-			turnRatioR = 1 - turn;
-			turnRatioL = 1;
-		}
-		else if(turn<0)
-		{
-			turnRatioR = 1;
-			turnRatioL = 1 - turn;
-		}
-		rSpeed = speed * turnRatioR;
-		lSpeed = speed * turnRatioL;
-		meatDrive(rSpeed, lSpeed);
 	}
 	
 	public static void driveForw(double lValue, double rValue, double speed)

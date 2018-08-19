@@ -691,7 +691,7 @@ public class Elevator
 				Lock.lock();
 				Timer.delay(.75);
 			}
-			else
+			else if (!ElevatorLevel.reachedStop() && !reachedBottom)
 			{
 				moveEleVader(-.2);
 			}
