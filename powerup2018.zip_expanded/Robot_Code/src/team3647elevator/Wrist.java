@@ -125,13 +125,13 @@ public class Wrist {
 	{
 		if(reachedAim())
 		{
-			moveWrist(.15);
+			moveWrist(.17);
 		}
 		else
 		{
 			if(wristEncoderValue < Constants.aim)
 			{
-				moveWrist(0.35);
+				moveWrist(0.2);
 			}
 			else 
 			{
@@ -144,17 +144,17 @@ public class Wrist {
 	{
 		if(reachedIdle())
 		{
-			stopWrist();
+			moveWrist(.15);
 		}
 		else
 		{
 			if(wristEncoderValue < Constants.idle)
 			{
-				moveWrist(0.3);
+				moveWrist(0.2);
 			}
 			else
 			{
-				moveWrist(-0.2);
+				stopWrist();
 			}
 		}
 	}
@@ -191,7 +191,7 @@ public class Wrist {
 				{
 					moveWrist(-0.2);
 				}
-				break;
+			break;
 				//should be below code for final
 				//setWristIdle();
 			case 1://flat
@@ -221,9 +221,9 @@ public class Wrist {
 						} 
 						else
 						{
-							moveWrist(-.15);
+							moveWrist(-.1);
 						}
-						break;
+					break;
 					case 2:
 						if(reachedAim())
 						{
@@ -232,9 +232,9 @@ public class Wrist {
 						} 
 						else
 						{
-							moveWrist(.2);
+							moveWrist(.3);
 						}
-						break;
+					break;
 					case 3:
 						if(reachedIdle())
 						{
@@ -243,14 +243,14 @@ public class Wrist {
 						}
 						else
 						{
-						moveWrist(.25);
+						moveWrist(.3);
 						}
-						break;
+					break;
 					case -1:
 						wristState = -1;
-						break;
+					break;
 				}					
-				break;
+			break;
 		
 			case 2://aim
 				if(manualOverride)
@@ -279,13 +279,13 @@ public class Wrist {
 						}
 						else
 						{
-							moveWrist(-.2);
+							moveWrist(-.25);
 						}
-						break;
+					break;
 					case 2:
-							maintainAimPosition();
-							wristState = 2;
-							break;
+						maintainAimPosition();
+						wristState = 2;
+					break;
 					case 3:
 						if(reachedIdle())
 						{
@@ -294,14 +294,14 @@ public class Wrist {
 						} 
 						else
 						{
-							moveWrist(.2);
+							moveWrist(.3);
 						}
-						break;
+					break;
 					case -1:
 						wristState = -1;
-						break;
+					break;
 				}
-				break;		
+			break;		
 				
 			case 3://idle
 				if(manualOverride)
@@ -329,9 +329,9 @@ public class Wrist {
 						} 
 						else
 						{
-							moveWrist(-.2);
+							moveWrist(-.25);
 						}
-						break;
+					break;
 					case 2:
 						if(reachedAim())
 						{
@@ -340,18 +340,19 @@ public class Wrist {
 						} 
 						else
 						{
-							moveWrist(.2);
+							moveWrist(-.2);
 						}
-						break;
+					break;
 					case 3:
 						maintainIdlePosition();
 						wristState = 3;
-						break;
+					break;
 					case -1:
 						wristState = -1;
-						break;
+					break;
 				}
-	
+			break;
+
 			case -1://manual
 				if(flat || aim || idle)
 				{

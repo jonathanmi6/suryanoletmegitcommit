@@ -6,6 +6,7 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="joy.buttonb"/>
 			<item value="originalposition"/>
 			<item value="setencoder"/>
 		</list>

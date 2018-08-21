@@ -1,6 +1,6 @@
 package team3647subsystems;
 
-import com.ctre.CANTalon;
+
 import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.ControlMode;
@@ -45,10 +45,29 @@ public class Drivetrain
 	
 	static double avg;
 
-	
+	public static double absYValue;
+	public static double absXValue;
 	public static void FRCarcadedrive(double yValue, double xValue)
 	{
-		drive.arcadeDrive(yValue, xValue, false);
+		absYValue = Math.pow(Math.abs(yValue), 2);
+		absXValue = Math.pow(Math.abs(xValue), 2);
+		if(yValue<0)
+		{
+			speed = -absYValue;
+		}
+		else if(yValue>0)
+		{
+			speed = absYValue;
+		}
+		if(xValue<0)
+		{
+			turn = -absXValue;
+		}
+		else if(xValue>0)
+		{
+			turn = absXValue;
+		}
+		drive.arcadeDrive(speed, turn, false);
 	}
 	
 	public static void tankDrive(double lYValue, double rYValue)
@@ -59,7 +78,7 @@ public class Drivetrain
 	
 	public static void meatDrive(double lValue, double rValue)
 	{
-		drive.tankDrive(lValue, rValue);
+		drive.tankDrive(lValue, -rValue);
 		//drive.tankDrive(lYValue, rYValue, false);
 	}
 	public static void curvatureDrive(double throttle, double turn)
@@ -69,8 +88,10 @@ public class Drivetrain
 	
 	public static void runMEATDrivetrain(double yValue, double xValue)
 	{
-		speed = Math.pow(yValue, 1.96);
-		turn = Math.pow(xValue, 1.96);
+		//turn = Math.pow(yValue, 1.96);
+		//speed = Math.pow(xValue, 1.96);
+		speed = yValue;
+		turn = xValue;
 		if(turn == 0)
 		{
 			turnRatioR = 1;
@@ -94,7 +115,7 @@ public class Drivetrain
 		}
 		rSpeed = speed * turnRatioR;
 		lSpeed = speed * turnRatioL;
-		meatDrive(rSpeed * .986, lSpeed);
+		meatDrive(lSpeed * .986, rSpeed);
 	}
 	
 	public static void driveForw(double lValue, double rValue, double speed)
