@@ -21,7 +21,7 @@ public class Lights
 	
 	public static void runLights()
 	{
-		if(!IntakeWheels.getIntakeBannerSenor())
+		if(!IntakeWheels.getIntakeBannerSensor())
 		{
 			LightOutput(true, false, false);
 		}

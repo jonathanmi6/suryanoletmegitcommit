@@ -69,7 +69,7 @@ public class Elevator
 	
 	public static void setManualOverride(double jValue)
 	{
-		if(Math.abs(jValue) <.2 )
+		if(Math.abs(jValue) <.1 )
 		{
 			manualOverride = false;
 		}
@@ -667,46 +667,46 @@ public class Elevator
 				break;
 		}
 	}
-	public static void climbPrep(boolean joyButton)
-	{
-		if(joyButton)
-		{
-			//move wrist to idle
-			if(Wrist.reachedIdle())
-			{
-				Wrist.maintainIdlePosition();
-			}
-			else if(Wrist.wristEncoderValue < Constants.idle)
-			{
-				Wrist.moveWrist(0.3);
-			}
-			else if(Wrist.wristEncoderValue > Constants.idle)
-			{
-				Wrist.stopWrist();
-			}
-			//move elevator to bottom and lock
-			if(ElevatorLevel.reachedStop() && !reachedBottom)
-			{
-				reachedBottom = true;
-				Lock.lock();
-				Timer.delay(.75);
-			}
-			else if (!ElevatorLevel.reachedStop() && !reachedBottom)
-			{
-				moveEleVader(-.2);
-			}
-			//move elevator to climb and lock
-			if(ElevatorLevel.reachedClimb() && reachedBottom)
-			{
-				Shifter.lowGear();
-			}
-			else if(!ElevatorLevel.reachedClimb() && reachedBottom)
-			{
-				moveEleVader(1);
-			}
-			joyButton = true;
-		}
+	// public static void climbPrep(boolean joyButton)
+	// {
+	// 	if(joyButton)
+	// 	{
+	// 		//move wrist to idle
+	// 		if(Wrist.reachedIdle())
+	// 		{
+	// 			Wrist.maintainIdlePosition();
+	// 		}
+	// 		else if(Wrist.wristEncoderValue < Constants.idle)
+	// 		{
+	// 			Wrist.moveWrist(0.3);
+	// 		}
+	// 		else if(Wrist.wristEncoderValue > Constants.idle)
+	// 		{
+	// 			Wrist.stopWrist();
+	// 		}
+	// 		//move elevator to bottom and lock
+	// 		if(ElevatorLevel.reachedStop() && !reachedBottom)
+	// 		{
+	// 			reachedBottom = true;
+	// 			Lock.lock();
+	// 			Timer.delay(.75);
+	// 		}
+	// 		else if (!ElevatorLevel.reachedStop() && !reachedBottom)
+	// 		{
+	// 			moveEleVader(-.2);
+	// 		}
+	// 		//move elevator to climb and lock
+	// 		if(ElevatorLevel.reachedClimb() && reachedBottom)
+	// 		{
+	// 			Shifter.lowGear();
+	// 		}
+	// 		else if(!ElevatorLevel.reachedClimb() && reachedBottom)
+	// 		{
+	// 			moveEleVader(1);
+	// 		}
+	// 		joyButton = true;
+	// 	}
 		
-	}
+	// }
 	
 }

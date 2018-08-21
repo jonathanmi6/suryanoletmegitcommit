@@ -11,6 +11,7 @@ import team3647elevator.Elevator;
 import team3647elevator.ElevatorLevel;
 import team3647elevator.IntakeWheels;
 import team3647elevator.Wrist;
+import team3647elevator.WristLevel;
 import team3647pistons.Intake;
 import team3647pistons.Lock;
 import team3647pistons.Compressor007;
@@ -225,9 +226,10 @@ public class Robot extends IterativeRobot
 			Elevator.setManualOverride(joy.rightJoySticky1 * .6);
 			Elevator.runDarthVader();
 		}
+		//Elevator.climbPrep(joy.buttonB);
 	}
 	public void runWrist(){
-		Wrist.setWristEncoder();
+		WristLevel.setWristEncoder();
 		Wrist.setWristButtons(joy.dPadDown,joy.dPadSide,joy.dPadUp);
 		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.6);
 		Wrist.runWrist();
@@ -253,8 +255,8 @@ public class Robot extends IterativeRobot
 		else
 		{
 			//Drivetrain.arcadeDrive(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.leftJoySticky, joy.rightJoyStickx);
-			//Drivetrain.FRCarcadedrive(joy.leftJoySticky, joy.rightJoyStickx);
-			Drivetrain.runMEATDrivetrain(joy.leftJoySticky, joy.rightJoyStickx);
+			Drivetrain.FRCarcadedrive(joy.leftJoySticky, joy.rightJoyStickx);
+			//Drivetrain.runMEATDrivetrain(joy.leftJoySticky, joy.rightJoyStickx);
 		}
 	}
 	
@@ -290,13 +292,13 @@ public class Robot extends IterativeRobot
 			ElevatorLevel.testElevatorEncoders();
 		}
 		if(wristEncoder){
-			Wrist.testWristEncoder();
+			WristLevel.testWristEncoder();
 		}
 		if(wristCurrent){
 			Wrist.testWristCurrent();
 		}
 		if(wristLimitSwitch){
-			Wrist.testLimitSwitch();
+			WristLevel.testLimitSwitch();
 		}
 		if(intakeBanner){
 			IntakeWheels.testBannerSensor();

@@ -39,10 +39,31 @@ public class Constants
 
 	//Wrist
 	public final static int flat = 0;
-	public final static int aim = 310;
-	public final static int idle = 690;
+	public final static int aim = 350;
+	public final static int idle = 720;
 	public final static int wristPin = 0;
 	public final static int wristLimitSwitch = 1;
+		//flat
+	public final static double moveToFlat = -0.1;
+	public final static double aimMoveToFlat = -0.3;
+	public final static double idleMoveToFlat = -0.25;
+		//aim
+	public final static double idleMoveToAim = -0.2;
+	public final static double moveToAim = 0.3;
+	public final static double maintainAimWithCube = 0.17;
+	public final static double maintainAim = 0.1;
+	public final static double adjustAimUpWithCube = 0.2;
+	public final static double adjustAimUp = 0.15;
+	public final static double adjustAimDownWithCube = 0;
+	public final static double adjustAimDown = 0;
+		//idle
+	public final static double moveToIdle = 0.3;
+	public final static double maintainIdleWithcube = 0.15;
+	public final static double maintainIdle = 0;
+	public final static double adjustIdleUpWithCube = 0.2;
+	public final static double adjustidleUp = 0.15;
+	public final static double adjustIdleDownWithCube = -0.15;
+	public final static double adjustIdleDown = -0.1;
 	
 	//Auto Constants
 	public static final double oneCubeSwitchRightSideStraight = 8500;
