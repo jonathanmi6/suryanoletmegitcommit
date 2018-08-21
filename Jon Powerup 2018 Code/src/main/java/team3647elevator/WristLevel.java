@@ -37,18 +37,6 @@ public class WristLevel
 		wristEncoderValue = -Wrist.wristMotor.getSensorCollection().getQuadraturePosition();
   }
   
-  public static double moveToFlat;
-
-  public static void cubeDetectionValues()
-  {
-    if(!IntakeWheels.getIntakeBannerSensor())//with cube
-    {
-
-
-    }
-
-  }
-  
   public static boolean reachedFlat()
 	{
 			if(limitSwitch.get())
