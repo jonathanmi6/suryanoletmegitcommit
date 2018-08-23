@@ -75,7 +75,7 @@ public class Robot extends IterativeRobot
 		elevatorEncoder = false;
 		bannerSensor = false;
 		currentState = false;
-		wristEncoder = true;
+		wristEncoder = false;
 		wristLimitSwitch = false;
 		wristCurrent = false;
 		intakeBanner = false;
@@ -255,8 +255,9 @@ public class Robot extends IterativeRobot
 		else
 		{
 			//Drivetrain.arcadeDrive(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.leftJoySticky, joy.rightJoyStickx);
-			Drivetrain.FRCarcadedrive(joy.leftJoySticky, joy.rightJoyStickx);
+			//Drivetrain.FRCarcadedrive(joy.leftJoySticky, joy.rightJoyStickx);
 			//Drivetrain.runMEATDrivetrain(joy.leftJoySticky, joy.rightJoyStickx);
+			Drivetrain.curvatureDrive(joy.leftJoySticky, joy.rightJoyStickx);
 		}
 	}
 	

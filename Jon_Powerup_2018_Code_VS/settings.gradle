@@ -2,5 +2,6 @@ pluginManagement {
     repositories {
         mavenLocal()
         gradlePluginPortal()
+        //rooteProject.name='JON_POWERUP_2018_CODE_VS'
     }
 }

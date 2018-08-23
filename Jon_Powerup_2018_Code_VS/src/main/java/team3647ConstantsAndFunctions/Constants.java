@@ -57,7 +57,7 @@ public class Constants
 	public final static double adjustAimDownWithCube = 0;
 	public final static double adjustAimDown = 0;
 		//idle
-	public final static double moveToIdle = 0.3;
+	public final static double moveToIdle = 0.5;
 	public final static double maintainIdleWithcube = 0.15;
 	public final static double maintainIdle = 0;
 	public final static double adjustIdleUpWithCube = 0.2;
