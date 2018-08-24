@@ -218,7 +218,7 @@ public class Robot extends IterativeRobot
 		eleVader.setElevatorEncoder();
 		if(Shifter.piston.get() == DoubleSolenoid.Value.kReverse)
 		{
-			Elevator.moveEleVader(joy.rightJoySticky1 * 1);
+			Elevator.moveEleVader(joy.rightJoySticky1 * -1);
 		}
 		else
 		{
