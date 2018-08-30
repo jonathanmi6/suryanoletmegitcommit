@@ -43,27 +43,41 @@ public class Constants
 	public final static int idle = 720;
 	public final static int wristPin = 0;
 	public final static int wristLimitSwitch = 1;
+	//Wrist PID
+	public final static int kTimeoutMs = 10;
+		//Cube
+	public final static int cubePID = 1;
+	public final static double cubeF = 0.1;
+	public final static double cubeP = 1;
+	public final static double cubeI = 0;
+	public final static double cubeD = 50;
+			//no cube
+	public final static int noCubePID = 0;
+	public final static double noCubeP = .45;
+	public final static double noCubeF = .1;
+	public final static double noCubeI = 0;
+	public final static double noCubeD = 50;
 		//flat
-	public final static double moveToFlat = -0.1;
-	public final static double aimMoveToFlat = -0.3;
-	public final static double idleMoveToFlat = -0.25;
-		//aim
-	public final static double idleMoveToAim = -0.2;
-	public final static double moveToAim = 0.3;
-	public final static double maintainAimWithCube = 0.17;
-	public final static double maintainAim = 0.1;
-	public final static double adjustAimUpWithCube = 0.2;
-	public final static double adjustAimUp = 0.15;
-	public final static double adjustAimDownWithCube = 0;
-	public final static double adjustAimDown = 0;
-		//idle
-	public final static double moveToIdle = 0.5;
-	public final static double maintainIdleWithcube = 0.15;
-	public final static double maintainIdle = 0;
-	public final static double adjustIdleUpWithCube = 0.2;
-	public final static double adjustidleUp = 0.15;
-	public final static double adjustIdleDownWithCube = -0.15;
-	public final static double adjustIdleDown = -0.1;
+	// public final static double moveToFlat = -0.1;
+	// public final static double aimMoveToFlat = -0.3;
+	// public final static double idleMoveToFlat = -0.25;
+	// 	//aim
+	// public final static double idleMoveToAim = -0.2;
+	// public final static double moveToAim = 0.3;
+	// public final static double maintainAimWithCube = 0.17;
+	// public final static double maintainAim = 0.1;
+	// public final static double adjustAimUpWithCube = 0.2;
+	// public final static double adjustAimUp = 0.15;
+	// public final static double adjustAimDownWithCube = 0;
+	// public final static double adjustAimDown = 0;
+	// 	//idle
+	// public final static double moveToIdle = 0.5;
+	// public final static double maintainIdleWithcube = 0.15;
+	// public final static double maintainIdle = 0;
+	// public final static double adjustIdleUpWithCube = 0.2;
+	// public final static double adjustidleUp = 0.15;
+	// public final static double adjustIdleDownWithCube = -0.15;
+	// public final static double adjustIdleDown = -0.1;
 	
 	//Auto Constants
 	public static final double oneCubeSwitchRightSideStraight = 8500;

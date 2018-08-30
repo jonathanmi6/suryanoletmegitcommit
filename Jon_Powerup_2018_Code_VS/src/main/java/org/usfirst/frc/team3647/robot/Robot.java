@@ -11,7 +11,6 @@ import team3647elevator.Elevator;
 import team3647elevator.ElevatorLevel;
 import team3647elevator.IntakeWheels;
 import team3647elevator.Wrist;
-import team3647elevator.WristLevel;
 import team3647pistons.Intake;
 import team3647pistons.Lock;
 import team3647pistons.Compressor007;
@@ -58,6 +57,7 @@ public class Robot extends IterativeRobot
 			ElevatorLevel.resetElevatorEncoders();
 			Drivetrain.drivetrainInitialization();
 			setTests();
+			Wrist.wristInitialization();
 			
 		}
 		catch(Throwable t)
@@ -124,7 +124,7 @@ public class Robot extends IterativeRobot
 		Forks.lockTheForks();
 		Shifter.lowGear();
 		Elevator.elevatorState = 0;
-		Wrist.wristState = 0;
+		Wrist.aimedWristState = 0;
 		stopWatch.stop();
 		stopWatch.reset();
 		run = 0;
@@ -229,7 +229,7 @@ public class Robot extends IterativeRobot
 		//Elevator.climbPrep(joy.buttonB);
 	}
 	public void runWrist(){
-		WristLevel.setWristEncoder();
+		Wrist.setWristEncoder();
 		Wrist.setWristButtons(joy.dPadDown,joy.dPadSide,joy.dPadUp);
 		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.6);
 		Wrist.runWrist();
@@ -293,13 +293,13 @@ public class Robot extends IterativeRobot
 			ElevatorLevel.testElevatorEncoders();
 		}
 		if(wristEncoder){
-			WristLevel.testWristEncoder();
+			Wrist.testWristEncoder();
 		}
 		if(wristCurrent){
 			Wrist.testWristCurrent();
 		}
 		if(wristLimitSwitch){
-			WristLevel.testLimitSwitch();
+			Wrist.testLimitSwitch();
 		}
 		if(intakeBanner){
 			IntakeWheels.testBannerSensor();
