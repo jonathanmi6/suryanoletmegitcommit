@@ -1,36 +1,44 @@
 package team3647elevator;
 
-import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.FeedbackDevice;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import team3647ConstantsAndFunctions.Constants;
-import team3647ConstantsAndFunctions.Functions;
-import team3647subsystems.Joysticks;
 
-import com.ctre.phoenix.motorcontrol.ControlMode;
-import com.ctre.phoenix.motorcontrol.FeedbackDevice;
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
-import edu.wpi.first.wpilibj.DigitalInput;
-
-public class Wrist {
-	public static int elevatorState, aimedElevatorState;
+public class Wrist 
+{
+	
+	public static int wristState;
 	public static int aimedWristState;
+
+	public static WPI_TalonSRX wristMotor = new WPI_TalonSRX(Constants.wristPin);
+	
+	public static int elevatorState, aimedElevatorState;
 	/*
-	 * 0. Surya Big Gay
+	 * 0. Start
 	 * 1. Flat
-	 * 2. Aim
-	 * 3. Idle
+	 * 2. Sixty-Degrees
+	 * 3. Facing Up
 	 */
 
-	public static boolean flat, aim, idle, suryaBigGay, manualOverride, originalPositionButton, limitSwitchState;
+	public static boolean start, flat, aim, up, manualOverride, originalPositionButton, limitSwitchState;
 	public static double overrideValue, speed, wristEncoder; 
-	public static int pidMode, wristEncoderValue;
-	public static WPI_TalonSRX wristMotor = new WPI_TalonSRX(Constants.wristPin);
-	static DigitalInput limitSwitch = new DigitalInput(Constants.wristLimitSwitch); 
-  	public static DigitalInput bannerSensor = new DigitalInput(Constants.intakeBannerSensor);
 
-	public static void wristInitialization()
+	//Insert step 1 code below
+	
+	public static void moveWrist(double speed)
+	{
+		wristMotor.set(ControlMode.PercentOutput, speed);
+	}
+	
+	public static void stopWrist()
+	{
+		moveWrist(0);
+	}
+	
+	public static void configWristPID()
 	{
 		wristMotor.configSelectedFeedbackSensor(FeedbackDevice.QuadEncoder, 0, Constants.kTimeoutMs);
 		wristMotor.setSensorPhase(true);
@@ -46,19 +54,26 @@ public class Wrist {
 		wristMotor.config_kD(Constants.cubePID, Constants.cubeD, Constants.kTimeoutMs);		
 	}
 	
-	public static void testWristEncoder()
+	public static DigitalInput limitSwitch = new DigitalInput(Constants.wristLimitSwitch); 
+	
+	public static void setLimitSwitch()
 	{
-		System.out.println("Wrist Encoder Value: " + wristEncoderValue);
+		limitSwitchState = limitSwitch.get();
 	}
 	
-	public static void resetWristEncoder()
+	public static void testLimitSwitch()
 	{
-		Wrist.wristMotor.getSensorCollection().setQuadraturePosition(0, 10);
+		if(flat)
+		{
+			System.out.println("Limit switch triggered");
+		}
+		else
+		{
+			System.out.println("Limit switch not triggered");
+		}
 	}
-	public static void setWristIdle()
-	{
-		Wrist.wristMotor.getSensorCollection().setQuadraturePosition(Constants.idle, 10);
-	}
+	
+	public static double wristEncoderValue;
 	
 	public static void setWristEncoder()
 	{
@@ -68,78 +83,77 @@ public class Wrist {
 		}
 		wristEncoderValue = -Wrist.wristMotor.getSensorCollection().getQuadraturePosition();
 	}
-
-	public static void setLimitSwitch()
+	
+	public static void resetWristEncoder()
 	{
-		limitSwitchState = limitSwitch.get();
+		wristMotor.getSensorCollection().setQuadraturePosition(0, 10);
 	}
 	
-	public static void testLimitSwitch()
-	{
-		if(reachedFlat())
-		{
-			System.out.println("true");
-		}
-		else
-		{
-			System.out.println("false");
-		}
-	}
-	
-	public static boolean getIntakeBannerSensor()
-	{
-		return bannerSensor.get();
-	}
-
-	public static void testBannerSensor()
-	{
-		if(getIntakeBannerSensor())
-		{
-			System.out.println("Intake Banner = True");
-		} else {
-			System.out.println("Intake Banner = False");
-		}
-	}
-
-	public static boolean reachedFlat()
-	{
-			if(limitSwitch.get())
-			{
-				return true;
-			} 
-			else 
-			{
-				return false;
-			}
-	}
-
 	public static void testWristCurrent()
 	{
 		System.out.println("Wrist Current: " + wristMotor.getOutputCurrent());
 	}
+
+	public void testWristEncoder()
+	{
+		System.out.println("Wrist Encoder Value: " + wristEncoderValue);
+	}
 	
-	public static void setWristButtons(boolean flatButton, boolean aimButton, boolean idleButton)
+	public static void setWristButtons(boolean flatButton, boolean aimButton, boolean upButton)
 	{
 		flat = flatButton;
 		aim = aimButton;
-		idle = idleButton;
+		up = upButton;
 	}
 	
-	public static void moveWristPosition(double position)
+	public static boolean reachedFlat()
 	{
-		wristMotor.set(ControlMode.Position, position);
+		if(limitSwitch.get())
+		{
+			return true;
+		} 
+		else 
+		{
+			return false;
+		}
+	}
+	
+	public static boolean reachedAim()
+	{
+		if(wristEncoder > Constants.aim - 100 && wristEncoder < Constants.aim + 50)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+	public static boolean reachedUp()
+	{
+		if(wristEncoder > Constants.up - 100 && wristEncoder < Constants.up + 50)
+		{
+			return true;
+		}
+		else
+		{
+			return false; 
+		}
+	}
+	
+	public static void moveToFlat()
+	{
+		if(reachedFlat())
+		{
+			stopWrist();
+		}
+		else
+		{
+			moveWrist(-.2);
+		}
 	}
 
-	public static void moveWrist(double speed)
-	{
-		wristMotor.set(ControlMode.PercentOutput, speed);
-	}
-	
-	public static void stopWrist()
-	{
-		moveWrist(0);
-	}
-	
 	public static void setManualWristOverride(double jValue)
 	{
 		if(Math.abs(jValue) <.1 )
@@ -155,103 +169,53 @@ public class Wrist {
 	
 	public static void runWrist()
 	{
-		if(getIntakeBannerSensor()) //no cube
+		int wristPID;
+		if(!IntakeWheels.getIntakeBannerSensor())//no cube
 		{
-			wristMotor.selectProfileSlot(Constants.noCubePID, 0);
-			if(flat)
-			{
-				aimedWristState = 1;
-			}
-			else if(aim)
-			{
-				aimedWristState = 2;
-			}
-			else if (idle)
-			{
-				aimedWristState = 3;
-			}
-			else if(manualOverride)
-			{
-				aimedWristState = -1;
-			}
-			switch(aimedWristState)
-			{
-				case 0:
-				break;
-				case 1:
-					if(reachedFlat())
-					{
-						resetWristEncoder();
-						stopWrist();
-					}
-					else
-					{
-						moveWrist(-.2);
-					}
-				break;
-				case 2:
-					moveWristPosition(Constants.aim);
-				break;
-				case 3:
-					moveWristPosition(Constants.idle);
-				break;
-				case -1:
-					if(!manualOverride)
-					{
-						overrideValue = 0;
-					}
-					moveWrist(overrideValue);
-				break;
-			}
+			wristPID = Constants.noCubePID;
 		}
 		else
 		{
-			wristMotor.selectProfileSlot(Constants.cubePID, 0);
-			if(flat)
-			{
-				aimedWristState = 1;
-			}
-			else if(aim)
-			{
-				aimedWristState = 2;
-			}
-			else if (idle)
-			{
-				aimedWristState = 3;
-			}
-			else if(manualOverride)
-			{
-				aimedWristState = -1;
-			}
-			switch(aimedWristState)
-			{
-				case 0:
-				break;
-				case 1:
-					if(reachedFlat())
-					{
-						resetWristEncoder();
-						stopWrist();
-					}
-					else
-					{
-						moveWrist(-0.2);
-					}
-				break;
-				case 2:
-					moveWristPosition(Constants.aim);
-				break;
-				case 3:
-					moveWristPosition(Constants.idle);
-				break;
-				case -1:
-					if(!manualOverride)
-					{
-						overrideValue = 0;
-					}
-					moveWrist(overrideValue);
-				break;
-			}
+			wristPID = Constants.cubePID;
 		}
+		wristMotor.selectProfileSlot(wristPID, 0);
+		if(manualOverride)
+		{
+			aimedWristState = -1;
+		}
+		else if(flat)
+		{
+			aimedWristState = 1;
+		}
+		else if(aim)
+		{
+			aimedWristState = 2;
+		}
+		else if (up)
+		{
+			aimedWristState = 3;
+		}
+		switch(aimedWristState)
+		{
+			case 1:
+				moveToFlat();
+				break;
+			case 2:
+				wristMotor.set(ControlMode.Position, Constants.aim);
+				break;
+			case 3:
+				wristMotor.set(ControlMode.Position, Constants.up);
+				break;
+			case -1:
+				if(!manualOverride)
+				{
+					overrideValue = 0;
+				}
+				moveWrist(overrideValue);
+				break;
+			}
+		
 	}
+	
 }
+

@@ -8,7 +8,7 @@ import edu.wpi.first.wpilibj.MotorSafety;
 import edu.wpi.first.wpilibj.MotorSafetyHelper;
 import edu.wpi.first.wpilibj.Timer;
 import team3647elevator.Elevator;
-import team3647elevator.ElevatorLevel;
+import team3647elevator.Elevator;
 import team3647elevator.IntakeWheels;
 import team3647elevator.Wrist;
 import team3647pistons.Intake;
@@ -28,7 +28,8 @@ public class Robot extends IterativeRobot
 	//Objects
 	Encoders enc;
 	Joysticks joy;
-	ElevatorLevel eleVader;
+	Elevator eleVader;
+	Wrist wrist;
 	MotorSafety safety;
 	MotorSafetyHelper safetyChecker;
 	CameraServer server;
@@ -52,12 +53,12 @@ public class Robot extends IterativeRobot
 			enc = new Encoders();
 			safetyChecker = new MotorSafetyHelper(safety);
 			joy = new Joysticks();
-			eleVader = new ElevatorLevel();
+			eleVader = new Elevator();
 			Encoders.resetEncoders();
-			ElevatorLevel.resetElevatorEncoders();
+			Elevator.resetElevatorEncoders();
 			Drivetrain.drivetrainInitialization();
 			setTests();
-			Wrist.wristInitialization();
+			Wrist.configWristPID();
 			
 		}
 		catch(Throwable t)
@@ -84,31 +85,31 @@ public class Robot extends IterativeRobot
 	@Override
 	public void autonomousInit() 
 	{
-		try 
-		{
-			CrashChecker.logAutoInit();
-			Autonomous.initialize();
-		}
-		catch(Throwable t)
-		{
-			CrashChecker.logThrowableCrash(t);
-			throw t;
-		}	
+		// try 
+		// {
+		// 	CrashChecker.logAutoInit();
+		// 	Autonomous.initialize();
+		// }
+		// catch(Throwable t)
+		// {
+		// 	CrashChecker.logThrowableCrash(t);
+		// 	throw t;
+		// }	
 	}
 
 	@Override
 	public void autonomousPeriodic() 
 	{
-		while(DriverStation.getInstance().isAutonomous() && !DriverStation.getInstance().isDisabled())
-		{
-			//runMotorSafety();
-			updateJoysticks();
-			enc.setEncoderValues();
-			eleVader.setElevatorEncoder();
-			Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
-			//Autonomous.runAuto(Encoders.leftEncoderValue, Encoders.rightEncoderValue);
-			//runTests();
-		}
+		// while(DriverStation.getInstance().isAutonomous() && !DriverStation.getInstance().isDisabled())
+		// {
+		// 	//runMotorSafety();
+		// 	updateJoysticks();
+		// 	enc.setEncoderValues();
+		// 	eleVader.setElevatorEncoder();
+		// 	Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
+		// 	//Autonomous.runAuto(Encoders.leftEncoderValue, Encoders.rightEncoderValue);
+		// 	//runTests();
+		// }
 	}
 	
 	@Override
@@ -123,7 +124,7 @@ public class Robot extends IterativeRobot
 		Drivetrain.setToCoast();
 		Forks.lockTheForks();
 		Shifter.lowGear();
-		Elevator.elevatorState = 0;
+		Elevator.aimedElevatorState = 0;
 		Wrist.aimedWristState = 0;
 		stopWatch.stop();
 		stopWatch.reset();
@@ -176,7 +177,7 @@ public class Robot extends IterativeRobot
 		try 
 		{
 			CrashChecker.logAutoInit();
-			Autonomous.initialize();
+			//Autonomous.initialize();
 		}
 		catch(Throwable t)
 		{
@@ -201,7 +202,7 @@ public class Robot extends IterativeRobot
 		updateJoysticks();
 		enc.setEncoderValues();
 		eleVader.setElevatorEncoder();
-		Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
+//		Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
 //		Elevator.moveEleVader(joy.rightJoySticky * 1);
 //		Shifter.runPiston(joy.buttonY);
 	}
@@ -218,16 +219,18 @@ public class Robot extends IterativeRobot
 		eleVader.setElevatorEncoder();
 		if(Shifter.piston.get() == DoubleSolenoid.Value.kReverse)
 		{
-			Elevator.moveEleVader(joy.rightJoySticky1 * -1);
+			Elevator.moveElevator(joy.rightJoySticky1 * -1);
 		}
 		else
 		{
-			Elevator.setElevatorButtons(joy.buttonA1, false, joy.buttonB1,  joy.buttonY1, joy.buttonX1);
+			eleVader.setElevatorEncoder();
+			Elevator.setElevatorButtons(joy.buttonA1, joy.buttonB1,  joy.buttonY1, joy.buttonX1);
 			Elevator.setManualOverride(joy.rightJoySticky1 * .6);
-			Elevator.runDarthVader();
+			Elevator.runElevator();
 		}
 		//Elevator.climbPrep(joy.buttonB);
 	}
+
 	public void runWrist(){
 		Wrist.setWristEncoder();
 		Wrist.setWristButtons(joy.dPadDown,joy.dPadSide,joy.dPadUp);
@@ -282,18 +285,18 @@ public class Robot extends IterativeRobot
 		}
 		if(bannerSensor)
 		{
-			ElevatorLevel.testBannerSensor();
+			Elevator.testBannerSensor();
 		}
 		if(currentState)
 		{
-			System.out.println(Autonomous.currentState);
+			//System.out.println(Autonomous.currentState);
 		}
 		if(elevatorEncoder)
 		{
-			ElevatorLevel.testElevatorEncoders();
+			Elevator.testElevatorEncoders();
 		}
 		if(wristEncoder){
-			Wrist.testWristEncoder();
+			wrist.testWristEncoder();
 		}
 		if(wristCurrent){
 			Wrist.testWristCurrent();

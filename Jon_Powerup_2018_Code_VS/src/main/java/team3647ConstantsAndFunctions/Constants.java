@@ -23,61 +23,49 @@ public class Constants
 	//Elevator
 	public final static int rightIntakePin = 56;
 	public final static int leftIntakePin = 55;
-	public final static int leftElevatorMaster = 52;
-	public final static int rightElevatorMaster = 62;
-	public final static int leftElevatorSlave = 54;
-	public final static int rightElevatorSlave = 57;
+	public final static int leftGearboxSRX = 52;
+	public final static int rightGearboxSRX = 62;
+	public final static int leftGearboxSPX = 54;
+	public final static int rightGearboxSPX = 57;
 	public final static int elevatorBannerSensor = 9;
 	public final static int intakeBannerSensor = 8;
 	
-	public static final double stop = 0;
-	public static final double pickUp = 3000;
+	public static final double bottom = 0;
 	public static final double sWitch = 13000;
-	public static final double lowerScale = 36300;
-	public static final double scale = 41500;
+	public static final double lowerScale = 38000;
+	public static final double scale = 45000;
 	public static final double climb = 11000;
-
+	
+	// Elevator PID Values
+		//carriage only
+	public final static int carriagePID = 0;
+	public final static double carriageF = 0;
+	public final static double carriageP = 0.2;
+	public final static double carriageI = 0;
+	public final static double carriageD = 20;
+		//interstage
+	public final static int interstagePID = 1;
+	public final static double interstageF = 0;
+	public final static double interstageP = 0.4;
+	public final static double interstageI = 0;
+	public final static double interstageD = 50;
 	//Wrist
 	public final static int flat = 0;
-	public final static int aim = 350;
-	public final static int idle = 720;
+	public final static int aim = 500;
+	public final static int up = 700;
 	public final static int wristPin = 0;
 	public final static int wristLimitSwitch = 1;
-	//Wrist PID
-	public final static int kTimeoutMs = 10;
-		//Cube
+	
 	public final static int cubePID = 1;
 	public final static double cubeF = 0.1;
 	public final static double cubeP = 1;
 	public final static double cubeI = 0;
 	public final static double cubeD = 50;
-			//no cube
 	public final static int noCubePID = 0;
-	public final static double noCubeP = .45;
 	public final static double noCubeF = .1;
+	public final static double noCubeP = .45;
 	public final static double noCubeI = 0;
 	public final static double noCubeD = 50;
-		//flat
-	// public final static double moveToFlat = -0.1;
-	// public final static double aimMoveToFlat = -0.3;
-	// public final static double idleMoveToFlat = -0.25;
-	// 	//aim
-	// public final static double idleMoveToAim = -0.2;
-	// public final static double moveToAim = 0.3;
-	// public final static double maintainAimWithCube = 0.17;
-	// public final static double maintainAim = 0.1;
-	// public final static double adjustAimUpWithCube = 0.2;
-	// public final static double adjustAimUp = 0.15;
-	// public final static double adjustAimDownWithCube = 0;
-	// public final static double adjustAimDown = 0;
-	// 	//idle
-	// public final static double moveToIdle = 0.5;
-	// public final static double maintainIdleWithcube = 0.15;
-	// public final static double maintainIdle = 0;
-	// public final static double adjustIdleUpWithCube = 0.2;
-	// public final static double adjustidleUp = 0.15;
-	// public final static double adjustIdleDownWithCube = -0.15;
-	// public final static double adjustIdleDown = -0.1;
 	
 	//Auto Constants
 	public static final double oneCubeSwitchRightSideStraight = 8500;
@@ -104,4 +92,21 @@ public class Constants
 	public static final double lrandrrBackUpToWallTurnDist = 5400;
 	public static final double lrandrrBackUpToWallTurnRatio = 3.26;
 	public static final double lrStraightAfterWall = 	2928;
+	
+	//PID Constants
+	public final static int kTimeoutMs = 10;
+	public final static int drivePID = 0;
+	public final static boolean kSensorPhase = true;
+	public final static boolean kMotorInvert = false;
+	public final static double lDrivekF = 0.577966;
+	public final static double lDrivekP = 0;
+	public final static double lDrivekI = 0;
+	public final static double lDrivekD = 0;
+	public final static double rDrivekF = 0.571189;
+	public final static double rDrivekP = 0;
+	public final static double rDrivekI = 0;
+	public final static double rDrivekD = 0;
+	public final static double velocityConstant = 1770;
+	public final static double deadZone = 0.05;
+
 }
