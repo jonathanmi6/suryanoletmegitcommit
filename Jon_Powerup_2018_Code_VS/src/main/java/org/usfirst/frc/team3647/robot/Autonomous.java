@@ -103,6 +103,7 @@ public class Autonomous
 				}
 				break;
 			case 1:
+				time = stopWatch.get();
 				if(Elevator.elevatorEncoderValue == 0 && Wrist.wristEncoderValue == 0)
 				{
 					stopWatch.stop();
@@ -187,6 +188,7 @@ public class Autonomous
 				}
 				break;
 			case 1:
+				time = stopWatch.get();
 				if(Elevator.elevatorEncoderValue == 0 && Wrist.wristEncoderValue == 0)
 				{
 					stopWatch.stop();
@@ -271,6 +273,7 @@ public class Autonomous
 				}
 				break;
 			case 1:
+				time = stopWatch.get();
 				if(Elevator.elevatorEncoderValue == 0 && Wrist.wristEncoderValue == 0)
 				{
 					stopWatch.stop();
@@ -355,6 +358,7 @@ public class Autonomous
 				}
 				break;
 			case 1:
+				time = stopWatch.get();
 				if(Elevator.elevatorEncoderValue == 0 && Wrist.wristEncoderValue == 0)
 				{
 					stopWatch.stop();
