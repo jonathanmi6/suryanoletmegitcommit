@@ -55,7 +55,7 @@ public class Elevator
 		leftGearboxSPX.setInverted(true);
 	}
 
-	public void setElevatorEncoder()
+	public static void setElevatorEncoder()
 	{
         if(reachedBottom())
 		{
@@ -152,7 +152,7 @@ public class Elevator
 				{
 					aimedElevatorState = -1;
 				}
-				else if(reachedBottom)
+				else if(reachedBottom())
 				{
 					stopElevator();
 					aimedElevatorState = 1;

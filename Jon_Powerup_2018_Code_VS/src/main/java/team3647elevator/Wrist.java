@@ -170,7 +170,7 @@ public class Wrist
 	public static void runWrist()
 	{
 		int wristPID;
-		if(!IntakeWheels.getIntakeBannerSensor())//no cube
+		if(IntakeWheels.getIntakeBannerSensor())//no cube
 		{
 			wristPID = Constants.noCubePID;
 		}

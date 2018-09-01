@@ -65,7 +65,7 @@ public class IntakeWheels
 	{
 		if(getIntakeBannerSensor())
 		{
-			System.out.println("Intake Banner = True");
+			System.out.println("Intake Banner = True");//no cube
 		} else {
 			System.out.println("Intake Banner = False");
 		}

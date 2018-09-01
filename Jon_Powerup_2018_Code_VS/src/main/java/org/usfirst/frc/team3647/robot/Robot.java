@@ -8,7 +8,6 @@ import edu.wpi.first.wpilibj.MotorSafety;
 import edu.wpi.first.wpilibj.MotorSafetyHelper;
 import edu.wpi.first.wpilibj.Timer;
 import team3647elevator.Elevator;
-import team3647elevator.Elevator;
 import team3647elevator.IntakeWheels;
 import team3647elevator.Wrist;
 import team3647pistons.Intake;
@@ -16,6 +15,7 @@ import team3647pistons.Lock;
 import team3647pistons.Compressor007;
 import team3647pistons.Forks;
 import team3647pistons.Shifter;
+// import team3647subsystems.ClimbButton;
 import team3647subsystems.Drivetrain;
 import team3647subsystems.Encoders;
 import team3647subsystems.Joysticks;
@@ -48,8 +48,6 @@ public class Robot extends IterativeRobot
 		try
 		{
 			CrashChecker.logRobotInit();
-			//server = CameraServer.getInstance();
-			//server.startAutomaticCapture("cam0", 0);
 			enc = new Encoders();
 			safetyChecker = new MotorSafetyHelper(safety);
 			joy = new Joysticks();
@@ -86,31 +84,31 @@ public class Robot extends IterativeRobot
 	@Override
 	public void autonomousInit() 
 	{
-		// try 
-		// {
-		// 	CrashChecker.logAutoInit();
-		// 	Autonomous.initialize();
-		// }
-		// catch(Throwable t)
-		// {
-		// 	CrashChecker.logThrowableCrash(t);
-		// 	throw t;
-		// }	
+		try 
+		{
+			CrashChecker.logAutoInit();
+			Autonomous.initialize();
+		}
+		catch(Throwable t)
+		{
+			CrashChecker.logThrowableCrash(t);
+			throw t;
+		}	
 	}
 
 	@Override
 	public void autonomousPeriodic() 
 	{
-		// while(DriverStation.getInstance().isAutonomous() && !DriverStation.getInstance().isDisabled())
-		// {
-		// 	//runMotorSafety();
-		// 	updateJoysticks();
-		// 	enc.setEncoderValues();
-		// 	eleVader.setElevatorEncoder();
-		// 	Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
-		// 	//Autonomous.runAuto(Encoders.leftEncoderValue, Encoders.rightEncoderValue);
-		// 	//runTests();
-		// }
+		while(DriverStation.getInstance().isAutonomous() && !DriverStation.getInstance().isDisabled())
+		{
+			//runMotorSafety();
+			Elevator.setElevatorEncoder();
+			Wrist.setWristEncoder();
+			Autonomous.runAuto();
+			Lights.runLights();
+			//Autonomous.runAuto(Encoders.leftEncoderValue, Encoders.rightEncoderValue);
+			//runTests();
+		}
 	}
 	
 	@Override
@@ -130,6 +128,7 @@ public class Robot extends IterativeRobot
 		stopWatch.stop();
 		stopWatch.reset();
 		run = 0;
+		//ClimbButton.buttonState = 1;
 	}
 	
 	@Override
@@ -142,27 +141,10 @@ public class Robot extends IterativeRobot
 			runMotorSafety();
 			runPistonsandForks();
 			runDrivetrain();
-//			if(prevLeftEncoder == Encoders.leftEncoderValue && run == 0)
-//			{
-//				stopWatch.start();
-//			}
-//			else if(prevLeftEncoder == Encoders.leftEncoderValue)
-//			{
-//				
-//			}
-//			else
-//			{
-//				stopWatch.stop();
-//				System.out.println(stopWatch.get());
-//				Encoders.testEncoders();
-//				prevLeftEncoder = Encoders.leftEncoderValue;
-//				prevRightEncoder = Encoders.rightEncoderValue;
-//				run = 0;
-//			}
 			runElevator();
 			IntakeWheels.runIntake(joy.leftTrigger1, joy.rightTrigger1, false, 0, 0);
 			runWrist();
-			//Lights.runLights();
+			Lights.runLights();
 			runTests();
 		}
 		catch(Throwable t)
@@ -178,7 +160,6 @@ public class Robot extends IterativeRobot
 		try 
 		{
 			CrashChecker.logAutoInit();
-			//Autonomous.initialize();
 		}
 		catch(Throwable t)
 		{
@@ -202,7 +183,6 @@ public class Robot extends IterativeRobot
 		runMotorSafety();
 		updateJoysticks();
 		enc.setEncoderValues();
-		eleVader.setElevatorEncoder();
 //		Autonomous.test(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.buttonA);
 //		Elevator.moveEleVader(joy.rightJoySticky * 1);
 //		Shifter.runPiston(joy.buttonY);
@@ -217,14 +197,13 @@ public class Robot extends IterativeRobot
 	
 	public void runElevator()
 	{
-		eleVader.setElevatorEncoder();
+		Elevator.setElevatorEncoder();
 		if(Shifter.piston.get() == DoubleSolenoid.Value.kReverse)
 		{
 			Elevator.moveElevator(joy.rightJoySticky1 * -1);
 		}
 		else
 		{
-			eleVader.setElevatorEncoder();
 			Elevator.setElevatorButtons(joy.buttonA1, joy.buttonB1,  joy.buttonY1, joy.buttonX1);
 			Elevator.setManualOverride(joy.rightJoySticky1 * .6);
 			Elevator.runElevator();
@@ -235,7 +214,7 @@ public class Robot extends IterativeRobot
 	public void runWrist(){
 		Wrist.setWristEncoder();
 		Wrist.setWristButtons(joy.dPadDown,joy.dPadSide,joy.dPadUp);
-		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.6);
+		Wrist.setManualWristOverride(joy.leftJoySticky1 * 0.45);
 		Wrist.runWrist();
 	}
 
@@ -261,7 +240,7 @@ public class Robot extends IterativeRobot
 			//Drivetrain.arcadeDrive(Encoders.leftEncoderValue, Encoders.rightEncoderValue, joy.leftJoySticky, joy.rightJoyStickx);
 			//Drivetrain.FRCarcadedrive(joy.leftJoySticky, joy.rightJoyStickx);
 			//Drivetrain.runMEATDrivetrain(joy.leftJoySticky, joy.rightJoyStickx);
-			Drivetrain.curvatureDrive(joy.leftJoySticky, joy.rightJoyStickx);
+			Drivetrain.newArcadeDrive(joy.leftJoySticky, joy.rightJoyStickx);
 		}
 	}
 	

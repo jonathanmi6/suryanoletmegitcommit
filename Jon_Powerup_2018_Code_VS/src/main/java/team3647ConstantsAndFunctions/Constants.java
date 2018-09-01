@@ -57,7 +57,7 @@ public class Constants
 	public final static int wristLimitSwitch = 1;
 	
 	public final static int cubePID = 1;
-	public final static double cubeF = 0.1;
+	public final static double cubeF = 0;
 	public final static double cubeP = 1;
 	public final static double cubeI = 0;
 	public final static double cubeD = 50;
