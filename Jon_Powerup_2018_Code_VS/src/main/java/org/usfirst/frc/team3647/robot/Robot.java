@@ -56,6 +56,7 @@ public class Robot extends IterativeRobot
 			eleVader = new Elevator();
 			Encoders.resetEncoders();
 			Elevator.resetElevatorEncoders();
+			Elevator.elevatorInitialization();
 			Drivetrain.drivetrainInitialization();
 			setTests();
 			Wrist.configWristPID();
