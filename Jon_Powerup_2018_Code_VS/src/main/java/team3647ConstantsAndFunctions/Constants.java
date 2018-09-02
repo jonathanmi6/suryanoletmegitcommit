@@ -54,7 +54,7 @@ public class Constants
 	public final static int aim = 500;
 	public final static int up = 700;
 	public final static int wristPin = 0;
-	public final static int wristLimitSwitch = 1;
+	public final static int wristLimitSwitch = 2;
 	
 	public final static int cubePID = 1;
 	public final static double cubeF = 0;

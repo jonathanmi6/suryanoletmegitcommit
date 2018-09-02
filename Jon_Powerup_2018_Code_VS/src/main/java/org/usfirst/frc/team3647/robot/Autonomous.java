@@ -30,7 +30,7 @@ public class Autonomous
 	public static void runAuto()
 	{
 		String gameData;
-		gameData = "RLR";
+		gameData = "LRL";
 		int priorityForSwitch = 0; //0 if we dont care, any other number means we only go for switch not scale
 		boolean cross = false;
 		if(cross)
@@ -95,7 +95,7 @@ public class Autonomous
 				if(time == 0)
 				{
 					stopWatch.start();
-					currentState = 1;
+					currentState = 4;
 				}
 				else
 				{
@@ -193,7 +193,7 @@ public class Autonomous
 				if(time == 0)
 				{
 					stopWatch.start();
-					currentState = 1;
+					currentState = 4;
 				}
 				else
 				{
@@ -291,7 +291,7 @@ public class Autonomous
 				if(time == 0)
 				{
 					stopWatch.start();
-					currentState = 1;
+					currentState = 4;
 				}
 				else
 				{
@@ -389,7 +389,7 @@ public class Autonomous
 				if(time == 0)
 				{
 					stopWatch.start();
-					currentState = 1;
+					currentState = 4;
 				}
 				else
 				{
@@ -456,6 +456,7 @@ public class Autonomous
 				break;
 			case 3:
 				Elevator.moveElevatorPosition(Constants.sWitch);
+				stopWatch.reset();
 				time = stopWatch.get();
 				if(time == 0)
 				{
@@ -494,7 +495,7 @@ public class Autonomous
 				}
 				break;
 			case 1:
-				if(stopWatch.get() < 2.2)
+				if(stopWatch.get() < 1.8)
 				{
 					Drivetrain.tankDrive(.7, .7);
 				}

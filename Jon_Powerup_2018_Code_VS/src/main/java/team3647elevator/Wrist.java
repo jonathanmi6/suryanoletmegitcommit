@@ -63,7 +63,7 @@ public class Wrist
 	
 	public static void testLimitSwitch()
 	{
-		if(flat)
+		if(limitSwitchState)
 		{
 			System.out.println("Limit switch triggered");
 		}
@@ -108,7 +108,7 @@ public class Wrist
 	
 	public static boolean reachedFlat()
 	{
-		if(limitSwitch.get())
+		if(limitSwitchState)
 		{
 			return true;
 		} 
@@ -150,7 +150,7 @@ public class Wrist
 		}
 		else
 		{
-			moveWrist(-.2);
+			moveWrist(-.4);
 		}
 	}
 
