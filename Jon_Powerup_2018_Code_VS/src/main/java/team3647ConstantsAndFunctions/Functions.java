@@ -15,10 +15,10 @@ public class Functions
 	public static double rightSide2Cube(double time, boolean right)
 	{
 		double straightTime = 2.2;
-		double turnTime = 1.65;
+		double turnTime = 1.4;
 		double shootTime = .7;
 		double secondCubeSecured = straightTime + turnTime + shootTime + 2;
-		double backUp = .5;
+		double backUp = .65;
 		if(right)
 		{
 			if(time < .3)
@@ -49,7 +49,7 @@ public class Functions
 			else if(time < straightTime + turnTime + shootTime)
 			{
 				Elevator.moveElevatorPosition(Constants.sWitch);
-				IntakeWheels.runIntake(0, 0, true, -.9, -.5);
+				IntakeWheels.runIntake(0, 0, true, -1, -1);
 				return 0;
 			}
 			else if(time < straightTime + turnTime + shootTime + .8)
@@ -109,7 +109,7 @@ public class Functions
 			else if(time < secondCubeSecured + backUp + 2.1)
 			{
 				Elevator.moveElevatorPosition(Constants.sWitch);
-				IntakeWheels.runIntake(0, 0, true, -.9, -.5);
+				IntakeWheels.runIntake(0, 0, true, -1, -1);
 				return 0;
 			}
 			else
@@ -135,7 +135,7 @@ public class Functions
 			}
 			else if(time < straightTime + turnTime)
 			{
-				return .2;
+				return 0;
 			}
 			else if(time < straightTime + turnTime + shootTime + .8)
 			{
@@ -368,7 +368,7 @@ public class Functions
 	
 	public static double rightScaleRightSwitch(double time, boolean right)
 	{
-		double straightTime = 3.4;
+		double straightTime = 3.6;
 		double turnToScaleUsingRightMotor = .5;
 		double stopAtScale = 1;
 		double firstScale = straightTime + turnToScaleUsingRightMotor + stopAtScale + turnToScaleUsingRightMotor - .04;
@@ -588,10 +588,274 @@ public class Functions
 			}
 		}
 	}
+
+	public static double doubleScale(double time, boolean right)
+	{
+		double straightTime = 3.1;
+		double turnToScaleUsingRightMotor = .5;
+		double stopAtScale = 1;
+		double firstScale = straightTime + turnToScaleUsingRightMotor + stopAtScale + turnToScaleUsingRightMotor - .04;
+		double goBackForSecondCube = .3;
+		double turnBackUsingLeftMotor = .63;
+		double timeToPickUpSecondCube = firstScale + goBackForSecondCube + turnBackUsingLeftMotor + 1;
+		double straightToSecondSube = .78;
+		double turnToSecondCube = 1.2;
+		double secondCubeSecured = timeToPickUpSecondCube + straightTime + turnToSecondCube + .7;
+		double backUp = .5;
+		if(right)
+		{
+			if(time < .3)
+			{
+				IntakeWheels.runIntake(0, 0, true, .12, .12);
+				Elevator.moveElevatorPosition(Constants.sWitch);
+				return .5;
+			}
+			else if(time < straightTime - .54)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return .74;
+			}
+			else if(time < straightTime)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return .2;
+			}
+			else if(time < straightTime + turnToScaleUsingRightMotor)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return .5;
+			}
+			else if(time < straightTime + turnToScaleUsingRightMotor + stopAtScale)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				IntakeWheels.runIntake(0, 0, true, -.5, -.5);
+				return 0;
+			}
+			else if(time < firstScale)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				IntakeWheels.runIntake(0, 0, true, 0, 0);
+				return -.5;
+			}
+			else if(time < firstScale + goBackForSecondCube)
+			{
+				if(Elevator.reachedBottom())
+				{
+					Elevator.moveElevator(0);
+				}
+				else
+				{
+					Elevator.moveElevator(-0.4);
+				}
+				return -.5;
+			}
+			else if(time < firstScale + goBackForSecondCube + turnBackUsingLeftMotor)
+			{
+				if(Elevator.reachedBottom())
+				{
+					Elevator.moveElevator(0);
+				}
+				else
+				{
+					Elevator.moveElevator(-0.4);
+				}
+				return 0;
+			}
+			else if(time < timeToPickUpSecondCube)
+			{
+				if(Elevator.reachedBottom())
+				{
+					Elevator.moveElevator(0);
+				}
+				else
+				{
+					Elevator.moveElevator(-0.4);
+				}
+				return 0;
+			}
+			else if(time < timeToPickUpSecondCube + .3)
+			{
+				Intake.openIntake();
+				return .2;
+			}
+			else if(time < timeToPickUpSecondCube + straightToSecondSube)
+			{
+				return .5;
+			}
+			else if(time < timeToPickUpSecondCube + straightToSecondSube + turnToSecondCube)
+			{
+				IntakeWheels.runIntake(0, 0, true, .5, .5);
+				return .5;
+			}
+			else if(time < timeToPickUpSecondCube + straightTime + turnToSecondCube + .3)
+			{
+				IntakeWheels.runIntake(0, 0, true, .5, .5);
+				return 0;
+			}
+			else if(time < timeToPickUpSecondCube + straightTime + turnToSecondCube + .3)
+			{
+				IntakeWheels.runIntake(0, 0, true, .3, .3);
+				Intake.closeIntake();
+				return 0;
+			}
+			else if(time < secondCubeSecured)
+			{
+				IntakeWheels.runIntake(0, 0, true, .12, .12);
+				Intake.closeIntake();
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube)
+			{
+				return -.5;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return -.5;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return .6;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube + turnToScaleUsingRightMotor + .1)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				return .53;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube + turnToScaleUsingRightMotor + .1 + stopAtScale)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				IntakeWheels.runIntake(0, 0, true, -.5, -.5);
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube + turnToScaleUsingRightMotor + .1 + stopAtScale + turnToScaleUsingRightMotor)
+			{
+				Elevator.moveElevatorPosition(Constants.scale);
+				IntakeWheels.runIntake(0, 0, true, 0, 0);
+				return -.5;
+			}
+			else
+			{
+				Elevator.moveElevatorPosition(Constants.sWitch);
+				IntakeWheels.runIntake(0, 0, true, 0, 0);
+				return 0;
+			}
+		}
+		else
+		{
+			if(time < .3)
+			{
+				return .5;
+			}
+			else if(time < straightTime - .54)
+			{
+				return .74;
+			}
+			else if(time < straightTime)
+			{
+				return .2;
+			}
+			else if(time < straightTime + turnToScaleUsingRightMotor)
+			{
+				return 0;
+			}
+			else if(time < straightTime + turnToScaleUsingRightMotor + stopAtScale)
+			{
+				return 0;
+			}
+			else if(time < firstScale)
+			{
+				return 0;
+			}
+			else if(time < firstScale + goBackForSecondCube)
+			{
+				return -.5;
+			}
+			else if(time < firstScale + goBackForSecondCube + turnBackUsingLeftMotor - .2)
+			{
+				return -.7;
+			}
+			else if(time < firstScale + goBackForSecondCube + turnBackUsingLeftMotor)
+			{
+				return -.5;
+			}
+			else if(time < timeToPickUpSecondCube)
+			{
+				return 0;
+			}
+			else if(time < timeToPickUpSecondCube + .3)
+			{
+				return .2;
+			}
+			else if(time < timeToPickUpSecondCube + straightToSecondSube)
+			{
+				return .5;
+			}
+			else if(time < timeToPickUpSecondCube + straightToSecondSube + turnToSecondCube)
+			{
+				return 0;
+			}
+			else if(time < timeToPickUpSecondCube + straightTime + turnToSecondCube + .3)
+			{
+				return 0;
+			}
+			else if(time < secondCubeSecured)
+			{
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube)
+			{
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube)
+			{
+				return -.5;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1)
+			{
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor - .2)
+			{
+				return .7;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor)
+			{
+				return .5;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube)
+			{
+				return .6;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube + turnToScaleUsingRightMotor + .1)
+			{
+				return 0;
+			}
+			else if(time < secondCubeSecured + turnToSecondCube + straightToSecondSube + 1 + turnBackUsingLeftMotor + goBackForSecondCube + turnToScaleUsingRightMotor + .1 + stopAtScale)
+			{
+				return 0;
+			}
+			else
+			{
+				return 0;
+			}
+		}
+	}
 	
 	public static double rightScaleLeftSwitch(double time, boolean right)
 	{
-		double straightTime = 3.4;
+		double straightTime = 3.6;
 		double turnToScaleUsingRightMotor = .5;
 		double stopAtScale = 1;
 		double firstScale = straightTime + turnToScaleUsingRightMotor + stopAtScale + turnToScaleUsingRightMotor - .04;
@@ -1387,3 +1651,4 @@ public class Functions
 //	}
 
 }
+

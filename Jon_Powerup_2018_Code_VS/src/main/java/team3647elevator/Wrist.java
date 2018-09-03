@@ -150,7 +150,7 @@ public class Wrist
 		}
 		else
 		{
-			moveWrist(-.4);
+			moveWrist(-.2);
 		}
 	}
 

@@ -1,3 +1,4 @@
+
 package org.usfirst.frc.team3647.robot;
 
 import edu.wpi.first.wpilibj.Timer;
@@ -30,37 +31,23 @@ public class Autonomous
 	public static void runAuto()
 	{
 		String gameData;
-		gameData = "LRL";
+		gameData = "RLR";
 		int priorityForSwitch = 0; //0 if we dont care, any other number means we only go for switch not scale
 		boolean cross = false;
+
 		if(cross)
 		{
 			cross();
 		}
-		else if(priorityForSwitch != 0)
-		{
-			if(gameData.charAt(0) == 'R')
-			{
-				rightSide2Cube();
-			}
-			else if(gameData.charAt(0) == 'L')
-			{
-				leftSide2Cube();
-			}
-			else
-			{
-				cross();
-			}
-		}
-		else if(priorityForSwitch == 0)
+		else
 		{
 			if(gameData.charAt(1) == 'R' && gameData.charAt(0) == 'L')
 			{
-				rightScaleLeftSwitch();
+				doubleScale();
 			}
 			else if(gameData.charAt(1) == 'R' && gameData.charAt(0) == 'R')
 			{
-				rightScaleRightSwitch();
+				doubleScale();
 			}
 			else if(gameData.charAt(1) == 'L' && gameData.charAt(0) == 'R')
 			{
@@ -74,10 +61,6 @@ public class Autonomous
 			{
 				cross();
 			}
-		}
-		else
-		{
-			cross();
 		}
 	}
 	
@@ -177,7 +160,63 @@ public class Autonomous
 				time = stopWatch.get();
 				lSSpeed = Functions.rightSide2Cube(time, false);
 				rSSpeed = Functions.rightSide2Cube(time, true);
+				Wrist.moveToFlat();
 				Drivetrain.tankDrive(lSSpeed, rSSpeed);
+				break;
+		}
+	}
+
+	public static void rightSide1Cube()
+	{
+		switch(currentState)
+		{
+			case 0:
+				IntakeWheels.runIntake(0, 0, true, .12, .12);
+				stopWatch.stop();
+				time = stopWatch.get();
+				if(time == 0)
+				{
+					stopWatch.start();
+					currentState = 4;
+				}
+				else
+				{
+					stopWatch.reset();
+				}
+				break;
+			case 4:
+				time = stopWatch.get();
+				Wrist.moveToFlat();
+				Elevator.moveElevatorPosition(Constants.sWitch);
+				if(time < .3)
+				{
+					speed = .5;
+					Drivetrain.tankDrive(speed, speed);
+				}
+				else if(time < 1.3)
+				{
+					speed = .68;
+					Drivetrain.tankDrive(speed, speed);
+				}
+				else if(time < 1.5)
+				{
+					speed = .2;
+					Drivetrain.tankDrive(speed, speed);
+				}
+				else if(time < 2.2)
+				{
+					Drivetrain.tankDrive(.9, .2);
+				}
+				else if(time < 2.6)
+				{
+					IntakeWheels.runIntake(0, 0, true, -.5, -.5);
+					Drivetrain.tankDrive(0, 0);
+				}
+				else 
+				{
+					IntakeWheels.runIntake(0, 0, true, 0, 0);
+					Drivetrain.tankDrive(0, 0);
+				}
 				break;
 		}
 	}
@@ -275,6 +314,35 @@ public class Autonomous
 				time = stopWatch.get();
 				lSSpeed = Functions.leftSide2Cube(time, false);
 				rSSpeed = Functions.leftSide2Cube(time, true);
+				Wrist.moveToFlat();
+				Drivetrain.tankDrive(lSSpeed, rSSpeed);
+				break;
+		}
+	}
+
+	public static void doubleScale()
+	{
+		switch(currentState)
+		{
+			case 0:
+				IntakeWheels.runIntake(0, 0, true, .12, .12);
+				stopWatch.stop();
+				time = stopWatch.get();
+				if(time == 0)
+				{
+					stopWatch.start();
+					currentState = 4;
+				}
+				else
+				{
+					stopWatch.reset();
+				}
+				break;
+			case 4:
+				time = stopWatch.get();
+				lSSpeed = Functions.doubleScale(time, false);
+				rSSpeed = Functions.doubleScale(time, true);
+				Wrist.moveToFlat();
 				Drivetrain.tankDrive(lSSpeed, rSSpeed);
 				break;
 		}
@@ -507,564 +575,6 @@ public class Autonomous
 		}
 		
 	}
-	
-//	public static void rightTwoSwitch(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				//IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				IntakeWheels.runIntake(0, 0, true, .2, .2);
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 2;
-//					
-//				}
-//				else
-//				{
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 5100))
-//				{
-//					Drivetrain.newArcadeDrive(.74, 0);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 6000))
-//				{
-//					Drivetrain.newArcadeDrive(.3, 0);
-//				}
-//				else
-//				{
-//					Encoders.resetEncoders();
-//					currentState = 3;
-//				}
-//				break;
-//			case 3:
-//				if(lValue == 0 && rValue == 0)
-//				{
-//					currentState = 4;
-//					
-//				}
-//				else
-//				{
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 4:
-//				if(Encoders.rightEncoderValue < 8100)
-//				{
-//					Drivetrain.goStraightLeft(lValue, rValue, 4, .2, .8, .07);
-//				}
-//				else if(Encoders.rightEncoderValue < 9010)
-//				{
-//					Drivetrain.goStraightLeft(lValue, rValue, 3, .13, .4, .05);
-//				}
-//				else
-//				{
-//					currentState = 100;
-//				}
-//				break;
-//			case 100:
-//				Drivetrain.stop();
-//				break;
-//		}
-//	}
-//	
-//	public static void testReset(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 2;
-//					
-//				}
-//				else
-//				{
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 8500))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .74);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 9500))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .3);
-//				}
-//				else
-//				{
-//					Drivetrain.stop();
-//				}
-//				break;
-//		}
-//	}
-//	
-//	public static void test(double lValue, double rValue, boolean button)
-//	{
-//		speed = 1;
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				if(lValue == 0 && rValue == 0)
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					//stopWatch.start();
-//					currentState = 1;
-//				}
-//				else
-//				{
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 1:
-//				if(!button)
-//				{
-//					Drivetrain.tankDrive(speed, speed);
-//					//Encoders.testEncoders();
-//					//System.out.println(stopWatch.get());
-//				}
-//				else
-//				{
-//					Encoders.testEncoders();
-//					Drivetrain.stop();
-//					currentState = 2;
-//				}
-//				break;
-//			case 2:
-//				Drivetrain.stop();
-//				
-//				break;
-//		}
-//	}
-//	
-//	
-//	public static void cross(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0 && time >= 2)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 2;
-//					
-//				}
-//				else if(lValue == 0 && rValue == 0 && ElevatorLevel.reachedStop())
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					currentState = 2;
-//					stopWatch.stop();
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(-.23);
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 8500))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .74);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 9500))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .3);
-//				}
-//				else
-//				{
-//					Drivetrain.stop();
-//				}
-//				break;
-//		}
-//	}
-//	
-//	public static void testDatScaleCurve(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0 && time >= 2)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 8;
-//					
-//				}
-//				else if(lValue == 0 && rValue == 0 && ElevatorLevel.reachedStop())
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					currentState = 8;
-//					stopWatch.stop();
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(-.23);
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 7000))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .74);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 8200))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .3);
-//				}
-//				else
-//				{
-//					stopWatch.stop();
-//					stopWatch.reset();
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//					currentState = 4;
-//				}
-//				break;
-//			case 4:
-//				rValue -= prevRightEncoder;
-//				lSSpeed = Drivetrain.keepMotorInPlace(prevLeftEncoder, lValue);
-//				rSSpeed = .5;
-//				double dist = 1700;
-//				if(rValue < dist)
-//				{
-//					Drivetrain.tankDrive(lSSpeed, rSSpeed);
-//				}
-//				else
-//				{
-//					stopWatch.start();
-//					currentState = 6;
-//				}
-//				break;
-//			case 6:
-//				if(stopWatch.get() < .6)
-//				{
-//					
-//				}
-//				else
-//				{
-//					stopWatch.stop();
-//					stopWatch.reset();
-//					prevRightEncoder = rValue;
-//					currentState = 7;
-//				}
-//				break;
-//			case 7:
-//				rValue -= prevRightEncoder;
-//				lSSpeed = Drivetrain.keepMotorInPlace(prevLeftEncoder, lValue);
-//				rSSpeed = -.7;
-//				dist = 2700;
-//				rValue = Math.abs(rValue);
-//				if(rValue < dist)
-//				{
-//					Drivetrain.tankDrive(lSSpeed, rSSpeed);
-//				}
-//				else
-//				{
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//					currentState = 99;
-//				}
-//				break;
-//			case 8:
-////				rValue -= prevRightEncoder;
-////				lValue -= prevLeftEncoder;
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 2400))
-//				{
-//					Drivetrain.driveBack(lValue, rValue, -.4);
-//				}
-//				else
-//				{
-//					currentState = 9;
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//				}
-//				break;
-//			case 9:
-//				lValue -= prevLeftEncoder;
-//				rSSpeed = Drivetrain.keepMotorInPlace(prevRightEncoder, rValue);
-//				lSSpeed = -.5;
-//				dist = 4480;
-//				lValue = Math.abs(lValue);
-//				if(lValue < dist)
-//				{
-//					Drivetrain.tankDrive(lSSpeed, rSSpeed);
-//				}
-//				else
-//				{
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//					stopWatch.start();
-//					currentState = 99;
-//				}
-//				break;
-//			case 99:
-//				rValue -= prevRightEncoder;
-//				lValue -= prevLeftEncoder;
-//				System.out.println("lValue: " + lValue);
-//				System.out.println("rValue: " + rValue);
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 3000))
-//				{
-//					Drivetrain.driveBack(lValue, rValue, -.3);
-//				}
-//				else
-//				{
-//					currentState = 100;
-//				}
-//				break;
-//			case 100:
-//				Drivetrain.stop();
-//				break;
-//		}
-//	}
-//	
-//	public static void testCurve(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0 && time >= 2)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 2;
-//					
-//				}
-//				else if(lValue == 0 && rValue == 0 && ElevatorLevel.reachedStop())
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					currentState = 2;
-//					stopWatch.stop();
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(-.23);
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 5000))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .7);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 8200))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .4);
-//				}
-//				else
-//				{
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//					currentState = 3;
-//				}
-//				break;
-//			case 3:
-//				rValue -= prevRightEncoder;
-//				lValue -= prevLeftEncoder;
-//				if(Functions.twoCubeSwitchLeftSideFirstCurve(rValue, 5300) != 0)
-//				{
-//					rSSpeed = Functions.twoCubeSwitchLeftSideFirstCurve(rValue, 5300);
-//					lSSpeed = rSSpeed/2.5;
-//					Drivetrain.goStraightLeft(lValue, rValue, 2.5, lSSpeed, rSSpeed, .06);
-//				}
-//				else
-//				{
-//					prevLeftEncoder = lValue;
-//					prevRightEncoder = rValue;
-//					currentState = 4;
-//				}
-//				break;
-//			case 4:
-//				rValue -= prevRightEncoder;
-//				lValue -= prevLeftEncoder;
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 3000))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .5);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 5000))
-//				{
-//					Drivetrain.driveForw(lValue, rValue, .6);
-//				}
-//				else
-//				{
-//					currentState = 5;
-//				}
-//				break;
-//			case 5:
-//				Drivetrain.stop();
-//				break;
-//		}
-//	}
-//	
-//	public static void testPID(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0 && time >= 2)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = 2;
-//					
-//				}
-//				else if(lValue == 0 && rValue == 0 && ElevatorLevel.reachedStop())
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					currentState = 2;
-//					stopWatch.stop();
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(-.23);
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				if(!Drivetrain.reachedDistance(lValue, rValue, 8500))
-//				{
-//					Drivetrain.tankDrive(.7, .7);
-//				}
-//				else if(!Drivetrain.reachedDistance(lValue, rValue, 10000))
-//				{
-//					Drivetrain.tankDrive(.4, .4);
-//				}
-//				else
-//				{
-//					//120 inches
-//					Encoders.testEncoders();
-//					currentState = 3;
-//				}
-//				break;
-//			case 3:
-//				Drivetrain.stop();
-//				break;
-//		}
-//	}
-//	
-//	public static void shootRight(double lValue, double rValue)
-//	{
-//		switch(currentState)
-//		{
-//			case 0:
-//				stopWatch.stop();
-//				stopWatch.reset();
-//				stopWatch.start();
-//				IntakeWheels.pickUp(.2);
-//				currentState = 1;
-//				break;
-//			case 1:
-//				time = stopWatch.get();
-//				if(lValue == 0 && rValue == 0 && time >= 2)
-//				{
-//					stopWatch.stop();
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					stopWatch.reset();
-//					currentState = -1;
-//					
-//				}
-//				else if(lValue == 0 && rValue == 0 && ElevatorLevel.reachedStop())
-//				{
-//					Elevator.stopEleVader();
-//					ElevatorLevel.resetElevatorEncoders();
-//					currentState = 2;
-//					stopWatch.stop();
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(-.23);
-//					Encoders.resetEncoders();
-//				}
-//				break;
-//			case 2:
-//				stopWatch.reset();
-//				if(ElevatorLevel.reachedPickUp())
-//				{
-//					currentState = 3;
-//				}
-//				else
-//				{
-//					Elevator.moveEleVader(.4);
-//				}
-//				break;
-//		}
-//	}
-//	
 	public static void initialize()
 	{
 		stopWatch.stop();

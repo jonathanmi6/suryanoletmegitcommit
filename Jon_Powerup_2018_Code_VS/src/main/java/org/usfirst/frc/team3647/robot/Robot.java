@@ -76,7 +76,7 @@ public class Robot extends IterativeRobot
 		bannerSensor = false;
 		currentState = false;
 		wristEncoder = false;
-		wristLimitSwitch = true;
+		wristLimitSwitch = false;
 		wristCurrent = false;
 		intakeBanner = false;
 	}
@@ -105,7 +105,7 @@ public class Robot extends IterativeRobot
 			//runMotorSafety();
 			Elevator.setElevatorEncoder();
 			Wrist.setWristEncoder();
-			Autonomous.runAuto();
+			Autonomous.rightSide1Cube();
 			Lights.runLights();
 			//Autonomous.runAuto(Encoders.leftEncoderValue, Encoders.rightEncoderValue);
 			//runTests();
@@ -225,7 +225,7 @@ public class Robot extends IterativeRobot
 
 	public void runPistonsandForks()
 	{
-		Intake.runIntake(joy.rightBumper1);
+		//Intake.runIntake(joy.rightBumper1);
 		Forks.runPiston(joy.buttonX);
 		Shifter.runPiston(joy.buttonY);
 		TiltServo.PullForks(joy.leftTrigger, joy.rightTrigger);
